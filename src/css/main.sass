@@ -98,7 +98,7 @@
   border-radius: 5px
   background-color: #ffffff
   width: 262px
-  position: relative
+  position: absolute
   padding: 20px
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
   &__heading
@@ -147,6 +147,19 @@
   margin: 0 auto
   &__list
     list-style-type: none
+
+.mega__box
+  display: none
+  border: 1px solid #e8e8e8
+  background-color: #ffffff
+  padding: 20px
+  border-radius: 5px
+  position: absolute
+  &__list
+    display: flex
+    flex-direction: column
+  &__item
+    text-decoration: none
 
 .banner
   background-color: #e8e8e8
@@ -262,4 +275,15 @@
     &__text
       padding-left: 20px
       padding-top: 20px
+      color: #222222
+      font-size: 13px
+      text-transform: uppercase
+      &__red
+        padding-left: 20px
+        padding-top: 20px
+        height: 15px
+        color: #f16d7f
+        font-size: 16px
+        font-weight: 700
+        text-transform: uppercase
 @import "media"
