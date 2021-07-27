@@ -1,0 +1,265 @@
+@import "fonts"
+@import "base"
+@import "vars"
+
+.header
+  border: 1px solid #ececec
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
+  &__flex
+    display: flex
+    justify-content: space-between
+    height: 100px
+    align-items: center
+  &__left
+    display: flex
+    align-items: center
+  &__form
+    display: flex
+  &__text
+    width: 281px
+    height: 38px
+    border-radius: 0 3px 3px 0
+    border: 1px solid #e6e6e6
+    background-color: #ffffff
+    padding-left: 16px
+    color: #a4a4a4
+    font-size: 14px
+    font-weight: 300
+    line-height: 32px
+    letter-spacing: 0.35px
+    border-top-left-radius: 0
+    border-bottom-left-radius: 0
+    border-top-right-radius: 0
+    border-bottom-right-radius: 0
+  &__right
+    display: flex
+    align-items: flex-end
+
+.logo__text
+  color: #222222
+  font-size: 27px
+  font-family: lato-light
+  text-decoration: none
+  margin-left: 13px
+  margin-right: 37px
+
+.other-color
+  color: #f16d7f
+  font-family: lato-black
+
+.button__search
+  width: 36px
+  border-radius: 0 3px 3px 0
+  border: 1px solid #e6e6e6
+  background-color: #ffffff
+  border-left-color: transparent
+  border-top-left-radius: 0
+  border-bottom-left-radius: 0
+
+.form__browse
+  width: 87px
+  height: 38px
+  border-radius: 3px 0 0 3px
+  border: 1px solid #e6e6e6
+  background-color: #cdcdcc
+  border-right-color: transparent
+  background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%)
+  border-top-right-radius: 0
+  border-bottom-right-radius: 0
+  padding-top: 2px
+
+.summary__search
+  display: block
+  color: #222222
+  font-size: 14px
+  line-height: 32px
+  text-align: center
+  &::-webkit-details-marker
+    display: none
+  &::after
+    content: '▼'
+    padding-left: 0.5em
+    font-size: 9px
+    color: #838383
+
+.button__logo
+  width: 130px
+  height: 38px
+  background-color: #f16d7f
+  border: transparent
+  margin-left: 25px
+  padding-top: 2px
+  letter-spacing: 0.38px
+  color: #ffffff
+
+.dropdown__menu
+  display: flex
+  flex-direction: column
+  border-radius: 5px
+  background-color: #ffffff
+  width: 262px
+  position: relative
+  padding: 20px
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
+  &__heading
+    color: #232323
+    font-family: lato-regular
+    font-size: 14px
+    font-weight: 400
+    line-height: 32px
+    text-transform: uppercase
+    letter-spacing: 0.35px
+    border-bottom: 1px solid #e8e8e8
+  &__item
+    font-size: 14px
+    font-weight: 400
+    line-height: 28px
+    letter-spacing: 0.35px
+    text-decoration: none
+    color: #4f4f4f
+    font-family: lato-regular
+
+.summary__basket
+  display: block
+  font-size: 14px
+  line-height: 32px
+  text-align: center
+  &::-webkit-details-marker
+    display: none
+  &::after
+    content: '▼'
+    padding-left: 0.5em
+    font-size: 9px
+    color: #ffffff
+
+.menu
+  display: flex
+  flex-direction: row
+  width: 680px
+  height: 51px
+  color: #222222
+  font-size: 14px
+  font-weight: 700
+  line-height: 26px
+  text-transform: uppercase
+  align-items: center
+  justify-content: space-between
+  margin: 0 auto
+  &__list
+    list-style-type: none
+
+.banner
+  background-color: #e8e8e8
+  height: 613px
+  &__block
+    background: url("/build/img/bg_banner.png") no-repeat
+    height: 100%
+    background-size: cover
+    display: flex
+    align-items: center
+  &__text
+    display: flex
+    flex-direction: column
+    height: 92px
+    border-left: 12px solid #f16d7f
+    justify-content: center
+  &__brand
+    font-size: 60px
+    letter-spacing: 1.5px
+    color: #222222
+    font-family: lato-black
+    margin-left: 12px
+    line-height: 65px
+  &__size
+    height: 92px
+  &__fashion
+    font-size: 40px
+    letter-spacing: 1px
+    color: #222222
+    font-family: lato-black
+    margin-left: 12px
+    &__span
+      color: #f16d7f
+      font-family: lato-black
+
+.promo
+  margin: 100px auto 100px
+  &__list
+    display: flex
+    justify-content: space-between
+  &__card
+    position: relative
+  &__hot
+    position: absolute
+    top: 25px
+    width: 175px
+    height: 82px
+    color: #222222
+    font-family: lato-black
+    font-size: 18px
+    text-align: left
+    letter-spacing: 0.45px
+    background: #fff
+    padding-left: 20px
+    padding-top: 16px
+  &__formen
+    color: #f16d7f
+    font-size: 30px
+    letter-spacing: 0.75px
+    font-family: lato-black
+  &__trendy
+    width: 225px
+    top: 45px
+  &__forwomen
+    width: 162px
+    padding-left: 20px
+    text-transform: uppercase
+  &__new
+    top: 45px
+    text-transform: uppercase
+  &__photo2
+    width: 560px
+    height: 261px
+    margin-top: 20px
+  &__photo4
+    margin-top: 20px
+
+.cards
+  &__list
+    height: 600px
+  &__head
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__heading
+    color: #222222
+    font-size: 30px
+    line-height: 54px
+    letter-spacing: 0.75px
+  &__paragraph
+    color: #9f9f9f
+    font-size: 14px
+    letter-spacing: 0.35px
+  &__up
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 60px
+  &__down
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 110px
+  &__product
+    width: 261px
+    height: 279px
+    &::hover
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+      border: 2px solid #222222
+    &__item
+      width: 100%
+      height: 100%
+    &__text
+      padding-left: 20px
+      padding-top: 20px
+@import "media"
