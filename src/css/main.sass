@@ -358,8 +358,7 @@
   display: flex
   justify-content: center
   &__text
-    width: 212px
-    height: 48px
+    padding: 15px
     background-color: #f16d7f
     border: transparent
   &__sum
@@ -413,6 +412,86 @@
   background: url("/build/img/bg_footer.png") no-repeat
   height: 438px
   background-size: cover
+  margin-bottom: 120px
   &__item
+    display: flex
+    justify-content: space-between
+    height: 100%
+    align-items: center
+  &__left
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 50%
+    height: 100%
+    border-right: 1px solid #ffffff
+  &__form
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 50%
+    height: 100%
+    &__heading
+      font-size: 24px
+      font-family: lato-regular
+      letter-spacing: 0.6px
+      line-height: 54px
+      text-transform: uppercase
+  &__comment
+    display: flex
+  &__text
+    color: #222224
+    font-size: 14px
+    font-style: italic
+    line-height: 26px
+    letter-spacing: 0.4px
+    width: 386px
+    padding-left: 24px
+
+.footer
+  &__list
+    display: flex
+  &__item
+    display: flex
+    flex-direction: column
+    &__text
+      color: #898989
+      font-size: 14px
+      font-weight: 300
+      line-height: 24px
+      letter-spacing: 0.35px
+      padding-top: 30px
+  &__heading
+    color: #f16d7f
+    font-size: 18px
+    line-height: 26px
+    text-transform: uppercase
+  &__link
+    text-decoration: none
+    color: #898989
+    font-size: 16px
+    letter-spacing: 0.4px
+    line-height: 42px
+  &__list1
+    display: flex
+    flex-direction: column
+    width: 427px
+  &__list2
+    display: flex
+    flex-direction: column
+    flex: 1
+    margin-left: 64px
+  &__list3
+    display: flex
+    flex-direction: column
+    flex: 1
+  &__list4
+    display: flex
+    flex-direction: column
+    flex: 1
+  &__finish
+    height: 79px
+    background-color: #e6e6e6
 
 @import "media"
