@@ -410,16 +410,27 @@
       font-family: lato-light
 
 .feedback
-  background: url("/build/img/bg_footer.png") no-repeat
   height: 438px
-  background-size: cover
   margin-bottom: 120px
   display: grid
+  position: relative
+  &::before
+    content: ''
+    display: grid
+    background: url("/build/img/bg_footer.png") no-repeat
+    position: absolute
+    width: 100%
+    height: 100%
+    opacity: 0.5
+    z-index: 1
+    background-size: cover
   &__item
     display: grid
     grid-template-columns: repeat(2, 1fr)
     justify-items: center
     align-items: center
+    position: relative
+    z-index: 2
   &__left
     display: grid
     grid-template-columns: 1fr auto 31px
@@ -492,9 +503,13 @@
 .footer
   &__list
     display: flex
+    padding-bottom: 90px
   &__item
     display: flex
     flex-direction: column
+    &__logo
+      display: flex
+      align-items: center
     &__text
       color: #898989
       font-size: 14px
@@ -507,7 +522,7 @@
     font-size: 18px
     line-height: 26px
     text-transform: uppercase
-    padding-bottom: 45px
+    padding-bottom: 35px
     padding-top: 14px
   &__link
     text-decoration: none
@@ -538,5 +553,21 @@
   &__finish
     height: 79px
     background-color: #e6e6e6
+
+.footer__finish
+  &__one
+    display: grid
+    height: 100%
+  &__social
+    display: grid
+    align-items: center
+    grid-template-columns: 82% 1fr 1fr 1fr 1fr 1fr
+    &__left
+      color: #7a7a7a
+      font-size: 16px
+      letter-spacing: 0.4px
+    &__link
+      // &:hover
+      //   border: 1px solid #f16d7f
 
 @import "media"
