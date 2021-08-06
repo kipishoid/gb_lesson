@@ -375,35 +375,33 @@
 .bigbanner
   margin: 100px auto
   &__item
-    display: flex
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
     background-color: #222224
   &__right
-    display: flex
-    flex-direction: column
-    width: 373px
+    display: grid
+    align-items: center
+    padding-left: 36px
+    padding-right: 43px
+    padding-top: 48px
+    padding-bottom: 66px
+    &__text
+      padding-left: 15px
     &__content
-      display: flex
-      align-items: flex-start
-      justify-content: center
-      width: 81%
-      margin: 0 auto
-      padding-top: 50px
+      display: grid
+      grid-template-columns: 1fr 4fr
     &__head
-      display: flex
-      padding-left: 35px
       padding-bottom: 15px
       color: #fbfbfb
       font-size: 20px
       letter-spacing: 0.5px
       font-size: lato-bold
     &__paragraph
-      display: flex
       color: #fbfbfb
       font-size: 14px
       font-weight: 300
       line-height: 24px
       letter-spacing: 0.35px
-      padding-left: 35px
       font-family: lato-light
 
 .feedback
@@ -592,8 +590,16 @@
       display: grid
       grid-template-columns: repeat(3, max-content)
       justify-content: end
+      grid-gap: 2px
     &__link
       text-decoration: none
+      font-size: 14px
+      font-weight: 700
+      line-height: 20px
+      text-transform: uppercase
+      color: #636363
+      &__red
+        color: $accent
 
 .product__promo
   &__content
@@ -620,4 +626,33 @@
     display: grid
     grid-template-columns: repeat(3, max-content)
     justify-content: space-between
+
+.product__bigbanner
+  background-color: #222224
+  height: 341px
+  &__container
+    height: 100%
+  &__content
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    height: 100%
+    &__new
+      display: grid
+      grid-template-rows: repeat(2, max-content)
+      align-self: center
+      justify-items: center
+      grid-template-columns: none
+    &__text
+      text-align: center
+      padding-left: 0
+      padding-top: 32px
+      width: 310px
+    &__head
+      display: grid
+      padding-left: 0
+      padding-top: 15px
+    &__paragraph
+      display: grid
+      padding-left: 0
+
 @import "media"
