@@ -548,22 +548,25 @@
   &__finish
     height: 79px
     background-color: #e6e6e6
-
-.footer__finish
-  &__one
-    display: grid
-    height: 100%
-  &__social
-    display: grid
-    align-items: center
-    grid-template-columns: 82% 1fr 1fr 1fr 1fr 1fr
-    &__left
-      color: #7a7a7a
-      font-size: 16px
-      letter-spacing: 0.4px
-    &__link
-      // &:hover
-      //   border: 1px solid $accent
+    &__one
+      display: grid
+      height: 100%
+    &__social
+      display: grid
+      align-items: center
+      grid-template-columns: repeat(2, 1fr)
+      &__link
+        &:hover
+          border: 1px solid $accent
+      &__left
+        color: #7a7a7a
+        font-size: 16px
+        letter-spacing: 0.4px
+      &__right
+        display: grid
+        grid-template-columns: repeat(5, max-content)
+        justify-content: end
+        grid-gap: 5px
 
 .product__banner
   background-color: #f8f3f4
@@ -625,7 +628,15 @@
   &__price
     display: grid
     grid-template-columns: repeat(3, max-content)
+    grid-template-rows: repeat(4, max-content)
     justify-content: space-between
+    &__filter
+      display: grid
+      grid-column: 1/4
+      grid-template-columns: repeat(3, 1fr)
+      &__trending
+        display: grid
+        grid-template-rows: repeat(3, 1fr)
 
 .product__bigbanner
   background-color: #222224
