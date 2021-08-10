@@ -95,8 +95,7 @@
   padding-right: 2px
 
 .dropdown__menu
-  display: flex
-  flex-direction: column
+  display: grid
   border-radius: 5px
   background-color: $light
   width: 262px
@@ -611,35 +610,36 @@
     grid-template-columns: 1fr 4fr
   &__menu
     width: 293px
-    padding-right: 10px
     &__side
       display: grid
       grid-template-rows: repeat(3, max-content)
       grid-gap: 18px
     &__list
       list-style-type: none
-      border-left: 5px solid #ef5b70
-      border-bottom: 1px solid #ebebeb
+      margin-bottom: 18px
     &__link
       text-decoration: none
       color: #6f6e6e
       font-size: 14px
-      font-weight: 700
-      line-height: 20px
       text-transform: uppercase
-      padding: 20px
+      padding-top: 12px
+      padding-bottom: 12px
+      padding-left: 11px
+      margin-right: 40px
       display: grid
       grid-template-columns: 1fr 1fr
+      box-shadow: inset 5px 0 0 #ef5b70
+      border-bottom: 1px solid #ebebeb
       &::-webkit-details-marker
         display: none
       &:after
         content: '▼'
-        padding-left: 50%
         font-size: 9px
         color: #838383
         display: grid
         justify-content: end
-
+      &:hover
+        color: #ef5b70
   &__price
     display: grid
     grid-template-columns: repeat(3, max-content)
@@ -690,7 +690,11 @@
         padding-left: 0.5em
         font-size: 9px
         color: #838383
-
+  &__dropdown
+    border-radius: 0
+    background-color: transparent
+    box-shadow: none
+    padding: 10px
 .product__bigbanner
   background-color: #222224
   height: 341px
