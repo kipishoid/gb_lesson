@@ -200,28 +200,54 @@
     <div class="container">
       <div class="product__promo__content">
         <div class="product__promo__menu">
-          <ul class="product__promo__menu__side">
-            <li class="product__promo__menu__list"><a class="product__promo__menu__list__link" href="#">Category</a>
-            </li>
-            <li class="product__promo__menu__list"><a class="product__promo__menu__list__link" href="#">Brand</a></li>
-            <li class="product__promo__menu__list"><a class="product__promo__menu__list__link" href="#">designer</a>
-            </li>
-          </ul>
+          <details class="product__promo__menu__list">
+            <summary class="product__promo__menu__link product__promo__menu__link1">Category</summary>
+          </details>
+          <details class="product__promo__menu__list">
+            <summary class="product__promo__menu__link product__promo__menu__link2">Brand</summary>
+          </details>
+          <details class="product__promo__menu__list">
+            <summary class="product__promo__menu__link product__promo__menu__link3">designer</summary>
+          </details>
         </div>
         <div class="product__promo__price">
           <div class="product__promo__price__filter">
             <div class="product__promo__price__filter__trending">
               <p class="product__promo__price__filter__paragraph">Trending now</p>
-              a.
+              <div class="product__promo__price__filter__list">
+                <a href="#" class="product__promo__price__filter__link">Bohemian</a>
+                <a href="#" class="product__promo__price__filter__link">Floral</a>
+                <a href="#" class="product__promo__price__filter__link">Lace</a>
+                <a href="#" class="product__promo__price__filter__link">Floral</a>
+                <a href="#" class="product__promo__price__filter__link">Lace</a>
+                <a href="#" class="product__promo__price__filter__link">Bohemian</a>
+              </div>
             </div>
             <div class="product__promo__price__filter__size">
               <p class="product__promo__price__filter__paragraph">size</p>
+              <div class="product__promo__price__filter__list">
+                <p><input type="checkbox" name="a" value="">XXS</p>
+                <p><input type="checkbox" name="a" value="XL">XS</p>
+                <p><input type="checkbox" name="a" value="XL">S</p>
+                <p><input type="checkbox" name="a" value="XL">M</p>
+                <p><input type="checkbox" name="a" value="XL">L</p>
+                <p><input type="checkbox" name="a" value="XL">XL</p>
+                <p><input type="checkbox" name="a" value="XL">XXL</p>
+              </div>
             </div>
             <div class="product__promo__price__filter__price">
               <p class="product__promo__price__filter__paragraph">price</p>
+              <input type="range" min="0" max="100" step="1" value="50">
             </div>
-            <div class="product__promo__price__filter__sort">
-
+            <div class="product__promo__price__sort">
+              <p class="product__promo__price__paragraph">Sort By</p>
+              <details class="product__promo__price__sortby">
+                <summary class="product__promo__price__summary1">Name</summary>
+              </details>
+              <p class="product__promo__price__paragraph">Show</p>
+              <details class="product__promo__price__sortby">
+                <summary class="product__promo__price__summary2">09</summary>
+              </details>
             </div>
           </div>
           <div class="cards__item">
@@ -494,7 +520,6 @@
       </div>
     </div>
   </footer>
-
 
 </body>
 
