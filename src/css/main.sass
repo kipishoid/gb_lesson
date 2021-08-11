@@ -13,8 +13,42 @@
   &__left
     display: flex
     align-items: center
+  &__logo
+    color: $dark
+    font-size: 27px
+    font-family: lato-light
+    text-decoration: none
+    margin-left: 13px
+    margin-right: 37px
+    &_other-color
+      color: $accent
+      font-family: lato-black
   &__form
     display: flex
+    &_browse
+      width: 87px
+      height: 38px
+      border-radius: 3px 0 0 3px
+      border: 1px solid #e6e6e6
+      background-color: #cdcdcc
+      border-right-color: transparent
+      background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%)
+      border-top-right-radius: 0
+      border-bottom-right-radius: 0
+      padding-top: 2px
+  &__summary-search
+    display: block
+    color: $dark
+    font-size: 14px
+    line-height: 32px
+    text-align: center
+    &::-webkit-details-marker
+      display: none
+    &::after
+      content: '▼'
+      padding-left: 0.5em
+      font-size: 9px
+      color: #838383
   &__text
     width: 281px
     height: 38px
@@ -28,56 +62,21 @@
     line-height: 32px
     letter-spacing: 0.35px
     border-radius: 0 0 0 0
+  &__button-search
+    width: 36px
+    border-radius: 0 3px 3px 0
+    border: 1px solid #e6e6e6
+    background-color: $light
+    border-left-color: transparent
+    border-top-left-radius: 0
+    border-bottom-left-radius: 0
+  &__button-lens
+    width: 16px
+    padding-top: 4px
+    padding-right: 2px
   &__right
     display: flex
     align-items: flex-end
-
-.logo__text
-  color: $dark
-  font-size: 27px
-  font-family: lato-light
-  text-decoration: none
-  margin-left: 13px
-  margin-right: 37px
-
-.other-color
-  color: $accent
-  font-family: lato-black
-
-.button__search
-  width: 36px
-  border-radius: 0 3px 3px 0
-  border: 1px solid #e6e6e6
-  background-color: $light
-  border-left-color: transparent
-  border-top-left-radius: 0
-  border-bottom-left-radius: 0
-
-.form__browse
-  width: 87px
-  height: 38px
-  border-radius: 3px 0 0 3px
-  border: 1px solid #e6e6e6
-  background-color: #cdcdcc
-  border-right-color: transparent
-  background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%)
-  border-top-right-radius: 0
-  border-bottom-right-radius: 0
-  padding-top: 2px
-
-.summary__search
-  display: block
-  color: $dark
-  font-size: 14px
-  line-height: 32px
-  text-align: center
-  &::-webkit-details-marker
-    display: none
-  &::after
-    content: '▼'
-    padding-left: 0.5em
-    font-size: 9px
-    color: #838383
 
 .button__logo
   width: 130px
@@ -89,11 +88,6 @@
   letter-spacing: 0.38px
   color: $light
 
-.button__lens
-  width: 16px
-  padding-top: 4px
-  padding-right: 2px
-
 .dropdown__menu
   display: grid
   border-radius: 5px
@@ -103,7 +97,7 @@
   padding: 20px
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
   z-index: 1
-  &__heading
+  &_heading
     color: #232323
     font-family: lato-regular
     font-size: 14px
@@ -112,7 +106,7 @@
     text-transform: uppercase
     letter-spacing: 0.35px
     border-bottom: 1px solid #e8e8e8
-  &__item
+  &_item
     font-size: 14px
     font-weight: 400
     line-height: 28px
@@ -135,20 +129,19 @@
     padding-left: 0.5em
     font-size: 9px
     color: $light
-
-.menu
-  display: flex
-  flex-direction: row
-  width: 680px
+.header-nav
+  display: grid
+  align-items: center
   height: 51px
+.menu
+  display: grid
+  grid-template-columns: repeat(7,max-content)
+  grid-column-gap: 50px
+  justify-items: center
   color: $dark
   font-size: 14px
   font-weight: 700
-  line-height: 26px
   text-transform: uppercase
-  align-items: center
-  justify-content: space-between
-  margin: 0 auto
   &__list
     list-style-type: none
     position: relative
@@ -604,20 +597,18 @@
       &__red
         color: $accent
 
-.product__promo
+.product-promo
   &__content
     display: grid
     grid-template-columns: 1fr 4fr
   &__menu
     width: 293px
-    &__side
-      display: grid
-      grid-template-rows: repeat(3, max-content)
-      grid-gap: 18px
-    &__list
+    display: grid
+    grid-template-rows: repeat(3, max-content)
+    grid-gap: 18px
+    &_list
       list-style-type: none
-      margin-bottom: 18px
-    &__link
+    &_link
       text-decoration: none
       color: #6f6e6e
       font-size: 14px
@@ -638,6 +629,7 @@
         color: #838383
         display: grid
         justify-content: end
+        align-items: center
       &:hover
         color: #ef5b70
   &__price
@@ -645,43 +637,46 @@
     grid-template-columns: repeat(3, max-content)
     grid-template-rows: repeat(4, max-content)
     justify-content: space-between
-    &__filter
+    &_filter
       display: grid
       grid-column: 1/4
       grid-template-columns: repeat(3, 1fr)
       grid-template-rows: repeat(2, max-content)
-      &__trending
-        display: grid
-      &__paragraph
-        grid-column: 1/2
-        font-size: 14px
-        font-weight: bold
-        line-height: 1.43
-        color: #6f6e6e
-        text-transform: uppercase
-        padding-bottom: 25px
-      &__list
-        display: grid
-        grid-template-columns: 25% 20% 25%
-        grid-column-gap: 5px
-      &__link
-        text-decoration: none
-        font-size: 14px
-        color: #6f6e6e
-        line-height: 1.8
-    &__sort
+      grid-row-gap: 41px
+    &_filter-trending
       display: grid
-      grid-template-columns: repeat(4,10%)
+    &_filter-paragraph
+      grid-column: 1/2
+      font-size: 14px
+      font-weight: bold
+      line-height: 1.43
+      color: #6f6e6e
+      text-transform: uppercase
+      padding-bottom: 25px
+    &_list
+      display: grid
+      grid-template-columns: 25% 20% 25%
+      grid-column-gap: 5px
+    &_list1
+      grid-template-columns: repeat(4,46px)
+    &_link
+      text-decoration: none
+      font-size: 14px
+      color: #6f6e6e
+    &_sort
+      display: grid
+      grid-template-columns: repeat(4,67px 86px)
       grid-column: 1/4
       background-color: #f3f3f3
       height: 50px
       align-items: center
-    &__paragraph, &__sortby
+    &_paragraph-sort, &_sortby
       border: 1px solid #ebebeb
       background-color: $white
       color: #6f6e6e
       padding: 5px 10px
-    &__summary1, &__summary2
+      font-size: 14px
+    &_summary1, &_summary2
       display: block
       &::-webkit-details-marker
         display: none
@@ -695,6 +690,7 @@
     background-color: transparent
     box-shadow: none
     padding: 10px
+
 .product__bigbanner
   background-color: #222224
   height: 341px
@@ -721,6 +717,75 @@
       padding-top: 15px
     &__paragraph
       display: grid
-      padding-left: 0
+      padding-left: 0px
+
+.control
+  font-family: lato
+  display: block
+  position: relative
+  padding-left: 20px
+  margin-bottom: 5px
+  padding-top: 1px
+  cursor: pointer
+
+  input
+    position: absolute
+    z-index: -1
+    opacity: 0
+
+.control_indicator
+  position: absolute
+  top: 2px
+  left: 0
+  height: 15px
+  width: 15px
+  background: #ffffff
+  border: 1px solid #ebebeb
+  border-radius: 0px
+
+.control
+  &:hover input ~ .control_indicator
+    background: #cccccc
+
+  input
+    &:focus ~ .control_indicator
+      background: #cccccc
+
+    &:checked ~ .control_indicator
+      background: #f16d7f
+
+  &:hover input:not([disabled]):checked ~ .control_indicator
+    background: #e6647d
+
+  input
+    &:checked:focus ~ .control_indicator
+      background: #e6647d
+
+    &:disabled ~ .control_indicator
+      background: #e6e6e6
+      opacity: 0.6
+      pointer-events: none
+
+.control_indicator:after
+  box-sizing: unset
+  content: ''
+  position: absolute
+  display: none
+
+.control input:checked ~ .control_indicator:after
+  display: block
+
+.control-checkbox
+  .control_indicator:after
+    left: 5px
+    top: 2px
+    width: 2px
+    height: 5px
+    border: solid #ffffff
+    border-width: 0 2px 2px 0
+    transform: rotate(45deg)
+
+  input:disabled ~ .control_indicator:after
+    border-color: #7b7b7b
 
 @import "media"
