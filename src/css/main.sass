@@ -37,6 +37,8 @@
       border-bottom-right-radius: 0
       padding-top: 2px
       cursor: pointer
+      &:hover
+        background-color: $accent
   &__summary-search
     display: block
     color: $dark
@@ -46,10 +48,13 @@
     &::-webkit-details-marker
       display: none
     &::after
-      content: '▼'
-      padding-left: 0.5em
-      font-size: 8px
-      color: #838383
+      content: ''
+      border-style: solid
+      border-width: 5px 4.5px 0 4.5px
+      border-color: #838383 transparent transparent transparent
+      display: inline-grid
+      margin-left: 5px
+      vertical-align: middle
     &:hover
       color: $accent
   &__text
@@ -82,9 +87,10 @@
     align-items: flex-end
 .header__form_browse[open] > .header__summary-search
   &:after
-    content: '▲'
-    color: $accent
-    font-size: 8px
+    content: ''
+    border-style: solid
+    border-width: 0 4.5px 5px 4.5px
+    border-color: transparent transparent $accent transparent
 .header__form_browse[open] > .header__summary-search
   &:before
     display: none
@@ -654,11 +660,12 @@
     &_list[open] > .product-promo__menu_link
       &:before
         display: none
+  &__dropdown
+    border-radius: 0
+    background-color: transparent
+    box-shadow: none
+    padding: 10px
   &__price
-    display: grid
-    grid-template-columns: repeat(3, max-content)
-    grid-template-rows: repeat(4, max-content)
-    justify-content: space-between
     &_filter
       display: grid
       grid-column: 1/4
@@ -671,7 +678,6 @@
       grid-column: 1/2
       font-size: 14px
       font-weight: bold
-      line-height: 1.43
       color: #6f6e6e
       text-transform: uppercase
       padding-bottom: 25px
@@ -701,23 +707,50 @@
       color: #6f6e6e
       padding: 5px 10px
       font-size: 14px
-    &_block
+    &_block1
       display: grid
       grid-template-columns: 67px 86px
+      margin-left: 10px
+    &_block2
+      display: grid
+      grid-template-columns: 55px 63px
+      margin-left: 10px
+    &_cent
+      display: grid
+      grid-template-columns: 1fr 1fr
+      font-size: 14px
+      color: #6f6e6e
+    &_cent2
+      display: grid
+      justify-content: end
     &_summary1, &_summary2
       display: block
       &::-webkit-details-marker
         display: none
       &:after
         content: '▼'
-        padding-left: 0.5em
+        padding-left: 2.5em
         font-size: 8px
         color: #838383
-  &__dropdown
-    border-radius: 0
-    background-color: transparent
-    box-shadow: none
-    padding: 10px
+  &__cards
+    display: grid
+    grid-template-columns: repeat(3,max-content)
+    justify-content: space-between
+  &__down-menu
+    display: grid
+    grid-template-columns: 1fr 1fr
+    margin-top: 45px
+    margin-bottom: 110px
+    &_left
+    &_right
+      display: grid
+      justify-content: end
+    &_button
+      padding: 15px 47px
+      border: 1px solid $accent
+      font-size: 16px
+      background-color: #fff
+      color: $accent
 
 .product__bigbanner
   background-color: #222224
