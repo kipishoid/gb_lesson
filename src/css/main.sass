@@ -816,6 +816,8 @@
       grid-template-columns: 533px repeat(5,1fr)
     &_details-img
       grid-row: 1/4
+    &_details-head1
+    &_details-head
     &_details1
       display: grid
       grid-template-rows: repeat(3,1fr)
@@ -824,28 +826,33 @@
       border-bottom: 1px solid #eaeaea
       padding-bottom: 26px
       padding-top: 26px
+      align-items: center
+    &_details-head1
+      color: #222222
+    &_details-head
+      color: #656565
+    &_details-font
+      justify-self: center
+      color: #656565
     &_details-desc1
       grid-column: 2/3
     &_details-desc2
       grid-column: 2/3
     &_details-desc3
       grid-column: 2/3
+      align-items: start !important
     &_details-desc4
       grid-row: 2/3
       grid-column: 3/4
-      justify-self: center
     &_details-desc5
       grid-row: 2/3
       grid-column: 4/5
-      justify-self: center
     &_details-desc6
       grid-row: 2/3
       grid-column: 5/6
-      justify-self: center
     &_details-desc7
       grid-row: 2/3
       grid-column: 6/7
-      justify-self: center
     &_details-desc8
       grid-row: 2/3
       grid-column: 7/8
@@ -883,6 +890,77 @@
       grid-template-rows: repeat(4,max-content)
       grid-row-gap: 80px
       text-align: center
+    &_button
+      display: grid
+      grid-template-columns: repeat(2,225px)
+      justify-content: space-between
+    &_button1
+      font-size: 14px
+      line-height: 1.2
+      font-weight: 700
+      text-transform: uppercase
+      color: #4a4a4a
+      padding: 20px
+      cursor:
+      background-color: #fff
+      border: 1px solid #eaeaea
+      margin-top: 44px
+      margin-bottom: 63px
+    &_form
+      display: grid
+      grid-template-columns: repeat(3, 355px)
+      justify-content: space-between
+    &_form-left
+      display: grid
+      grid-template-rows: 15px repeat(3, 45px)
+      grid-template-columns: 355px
+      grid-row-gap: 20px
+    &_adress
+      font-size: 16px
+      font-family: lato-bold
+      color: $dark
+      text-transform: uppercase
+    &_form-control
+      position: relative
+      border: 1px solid #eaeaea
+      color: #b1b1b1
+      font-size: 13px
+      display: block
+    &_form-control select
+      width: 355px
+      height: 45px
+      padding: 0 0 0 18px
+      background: transparent
+      border: 0
+      color: #b1b1b1
+      appearance: none
+      -webkit-appearance: none
+      -moz-appearance: none
+      outline: none
+      &::-ms-expand
+        display: none
+    &_form-arrow
+      position: absolute
+      z-index: -9999
+      border-style: solid
+      border-width: 5px 4.5px 0 4.5px
+      border-color: #838383 transparent transparent transparent
+      right: 12px
+      bottom: 17px
+    &_form-button
+      padding: 12px
+      font-size: 11px
+      font-family: lato-bold
+      color: #4a4a4a
+      background-color: $white
+      text-transform: uppercase
+      border: 1px solid #eaeaea
+      max-width: 100px
+    &_form-center
+      display: grid
+      grid-template-rows: repeat(4, 45px)
+    &_form-right
+      background-color: #f5f3f3
 //
 // checkbox
 //
