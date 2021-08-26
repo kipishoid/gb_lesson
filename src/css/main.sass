@@ -6,12 +6,14 @@
   border: 1px solid #ececec
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
   &__flex
-    display: flex
+    display: grid
+    grid-template-columns: repeat(2,max-content)
     justify-content: space-between
     height: 100px
     align-items: center
   &__left
-    display: flex
+    display: grid
+    grid-template-columns: repeat(3,max-content)
     align-items: center
   &__logo
     color: $dark
@@ -25,7 +27,8 @@
       color: $accent
       font-family: lato-black
   &__form
-    display: flex
+    display: grid
+    grid-template-columns: repeat(3,max-content)
     &_browse
       width: 87px
       height: 38px
@@ -86,8 +89,9 @@
     padding-top: 4px
     padding-right: 2px
   &__right
-    display: flex
-    align-items: flex-end
+    display: grid
+    grid-template-columns: repeat(2,max-content)
+    align-items: center
 .header__form_browse[open] > .header__summary-search
   &:after
     content: ''
@@ -106,16 +110,72 @@
   padding-top: 2px
   letter-spacing: 0.38px
   color: $light
+  cursor: pointer
 
 .dropdown__menu
   display: grid
   border-radius: 5px
-  background-color: $light
+  background-color: $white
   width: 262px
   position: relative
   padding: 20px
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
   z-index: 1
+  margin-top: 16px
+  &_account
+    grid-template-rows: repeat(5,max-content)
+  &_account-list
+    display: grid
+    grid-template-columns: repeat(3,max-content)
+    justify-content: space-between
+    align-items: center
+    border-bottom: 1px solid
+    padding: 16px 0
+    &_text
+      display: grid
+      grid-template-rows: repeat(3,1fr)
+      grid-row-gap: 8px
+    &_text-content
+      font-size: 12px
+      color: $dark
+      font-family: lato-bold
+      text-transform: uppercase
+    &_text-content1
+      font-size: 12px
+      color: $accent
+      text-transform: uppercase
+    &_text-total
+      display: grid
+      grid-template-columns: repeat(2,max-content)
+      justify-content: space-between
+      text-transform: uppercase
+      color: $dark
+    &_text-total1
+      font-size: 16px
+      font-weight: 700
+      font-family: lato-bold
+      padding: 20px 0 30px
+    &_text-btn
+      padding: 18px 0px 18px 0px
+      text-transform: uppercase
+      font-size: 14px
+      line-height: 1.2
+      font-weight: 700
+      color: $accent
+      width: 225px
+      cursor: pointer
+      background-color: $white
+      border: 1px solid $accent
+      margin-bottom: 10px
+      &:hover
+        background-color: $accent
+        color: $white
+      &_gray
+        border: 1px solid #eaeaea
+        color: #4a4a4a
+        &:hover
+          background-color: #eaeaea
+          color: #4a4a4a
   &_heading
     color: #232323
     font-family: lato-regular
@@ -144,10 +204,22 @@
   &::-webkit-details-marker
     display: none
   &::after
-    content: '▼'
-    padding-left: 0.5em
-    font-size: 8px
-    color: $light
+    content: ''
+    border-style: solid
+    border-width: 5px 4.5px 0 4.5px
+    border-color: $light transparent transparent transparent
+    display: inline-grid
+    margin-left: 5px
+    vertical-align: middle
+.button__logo[open] > .summary__basket
+  &:after
+    content: ''
+    border-style: solid
+    border-width: 0 4.5px 5px 4.5px
+    border-color: transparent transparent $light transparent
+.button__logo[open] > .summary__basket
+  &:before
+    display: none
 .header-nav
   display: grid
   align-items: center
@@ -164,9 +236,12 @@
   &__list
     list-style-type: none
     position: relative
+    cursor: pointer
     &:hover .mega__box
-      display: flex
-    &__last
+      display: grid
+      grid-template-columns: repeat(3,235px)
+      grid-column-gap: 46px
+    &_last
       &:hover .mega__box
         right: 0
         left: auto
@@ -176,7 +251,7 @@
 .mega__box
   display: none
   border: 1px solid #e8e8e8
-  background-color: $light
+  background-color: $white
   padding: 20px
   border-radius: 5px
   position: absolute
@@ -187,7 +262,7 @@
     display: block
     width: 12px
     height: 12px
-    background-color: $light
+    background-color: $white
     position: absolute
     transform: rotate(45deg)
     top: -7px
@@ -195,23 +270,22 @@
     border-left: 1px solid #e8e8e8
     border-top: 1px solid #e8e8e8
   &__heading
-    width: 235px
     border-bottom: 1px solid #e8e8e8
     margin-bottom: 8px
-    font-family: lato-regular
     font-size: 14px
-    font-weight: 400
     text-transform: uppercase
+    padding-bottom: 8px
+  &__heading1
+    padding-bottom: 8px
+    padding-top: 20px
   &__item
-    display: flex
-    flex-direction: column
-    margin-right: 46px
+    display: grid
+    grid-template-columns: 235px
     &:last-of-type
       margin-right: 0
   &__link
     text-decoration: none
     color: #646464
-    font-family: lato-regular
     font-size: 14px
     font-weight: 400
     line-height: 28px
@@ -219,6 +293,21 @@
     text-transform: capitalize
     &:hover
       color: $accent
+  &__link-img
+    padding-top: 20px
+    position: relative
+    padding-bottom: 4px
+    right: 20px
+  &__link-img-sale
+    font-size: 22px
+    line-height: 28px
+    font-weight: 900
+    text-transform: uppercase
+    letter-spacing: 0.025em
+    color: $white
+    position: absolute
+    right: 35px
+    bottom: 35px
 
 .banner
   background-color: #e8e8e8
@@ -227,21 +316,20 @@
     background: url("/build/img/bg_banner.png") no-repeat
     height: 100%
     background-size: cover
-    display: flex
+    display: grid
     align-items: center
   &__text
-    display: flex
-    flex-direction: column
+    display: grid
+    grid-template-rows: repeat(2,max-content)
     height: 92px
     border-left: 12px solid $accent
-    justify-content: center
   &__brand
     font-size: 60px
     letter-spacing: 1.5px
     color: $dark
     font-family: lato-black
     margin-left: 12px
-    line-height: 65px
+    line-height: 45px
   &__size
     height: 92px
   &__fashion
@@ -250,6 +338,7 @@
     color: $dark
     font-family: lato-black
     margin-left: 12px
+    padding-top: 7px
     &__span
       color: $accent
       font-family: lato-black
@@ -257,10 +346,32 @@
 .promo
   margin: 100px auto 100px
   &__list
-    display: flex
+    display: grid
+    grid-template-columns: repeat(2,1fr)
+    grid-template-rows: repeat(3,max-content)
     justify-content: space-between
-  &__card
+    grid-row-gap: 20px
+    grid-column-gap: 20px
+  &__photo1
     position: relative
+    grid-row: 1/3
+    &_img1
+      width: 560px
+  &__photo2
+    position: relative
+    grid-row: 3/4
+    &_img2
+      width: 560px
+  &__photo3
+    position: relative
+    grid-row: 1/2
+    &_img3
+      width: 560px
+  &__photo4
+    position: relative
+    grid-row: 2/4
+    &_img4
+      width: 560px
   &__hot
     position: absolute
     top: 25px
@@ -289,12 +400,6 @@
   &__new
     top: 45px
     text-transform: uppercase
-  &__photo2
-    width: 560px
-    height: 261px
-    margin-top: 20px
-  &__photo4
-    margin-top: 20px
 
 .cards
   &__heading
@@ -408,7 +513,6 @@
     &__paragraph
       color: #fbfbfb
       font-size: 14px
-      font-weight: 300
       line-height: 24px
       letter-spacing: 0.35px
       font-family: lato-light
@@ -484,6 +588,7 @@
       font-size: 14px
       letter-spacing: 0.35px
       padding-left: 28px
+      outline: none
     &__button
       width: 104px
       height: 46px
@@ -568,9 +673,36 @@
       display: grid
       align-items: center
       grid-template-columns: repeat(2, 1fr)
-      &__link
+      &_link1
+        background: url('/build/img/facebook.png')
+        width: 32px
+        height: 32px
         &:hover
-          border: 1px solid $accent
+          background: url('/build/img/facebook_r.png')
+      &_link2
+        background: url('/build/img/twitter.png')
+        width: 32px
+        height: 32px
+        &:hover
+          background: url('/build/img/twitter_r.png')
+      &_link3
+        background: url('/build/img/pied.png')
+        width: 32px
+        height: 32px
+        &:hover
+          background: url('/build/img/pied_r.png')
+      &_link4
+        background: url('/build/img/inst.png')
+        width: 32px
+        height: 32px
+        &:hover
+          background: url('/build/img/inst_r.png')
+      &_link5
+        background: url('/build/img/google.png')
+        width: 32px
+        height: 32px
+        &:hover
+          background: url('/build/img/google_r.png')
       &__left
         color: #7a7a7a
         font-size: 16px
@@ -1202,17 +1334,21 @@
       position: relative
       color: $dark
       margin: 0
-      padding: 10px 10px 10px 50px
+      padding: 25px 10px 25px 0px
       display: block
       width: 100%
       cursor: pointer
-      border-bottom: 1px solid
+      border-bottom: 1px solid #e8e8e8
+      font-family: lato-bold
+      font-size: 16px
+      text-transform: uppercase
       &:hover
         background: #ffffff
         color: #1e1e1e
     &_content
-      padding: 0px 15px
-      margin: 5px 0
+      display: grid
+      grid-template-columns: 1fr 1fr
+      padding: 0px 15px 0px
       width: 100% !important
       height: 0
       overflow: hidden
@@ -1222,17 +1358,85 @@
       -moz-transition: .3s ease
       -o-transition: .3s ease
       transition: .3s ease
+      &_radiobtn
+        display: grid
+        padding-top: 16px
+        padding-bottom: 16px
     &_input:checked ~ .checkout__accordion_content
       height: auto
       opacity: 1
-      padding: 15px
-      border-bottom: 1px solid
+      padding-left: 35px
+      border-bottom: 1px solid #e8e8e8
     &_input:checked ~ .checkout__accordion_label
-      color: $dark
       border-bottom: 0
     &_input
       display: none
-    &_content-item
+    &_content-left
+      display: grid
+      grid-template-rows: repeat(8,max-content)
+      grid-row-gap: 10px
+    &_content-right
+      display: grid
+      grid-template-rows: repeat(4, max-content)
+      grid-row-gap: 10px
+      padding-bottom: 70px
+    &_content-head
+      font-size: 13px
+      text-transform: uppercase
+      color: $dark
+    &_content-text
+      font-size: 13px
+      color: #b3b2b2
+      line-height: 1.54
+      &_red
+        color: $accent
+        font-size: 13px
+        padding-top: 22px
+        padding-bottom: 33px
+      &_easy
+        padding-top: 22px
+        padding-bottom: 28px
+      &_span
+        font-size: 18px
+    &_content-text-pass
+      color: $dark
+      font-size: 14px
+    &_content-continue
+      width: 180px
+      padding: 19px 53px
+      border: 1px solid #eaeaea
+      background-color: #fff
+      text-transform: uppercase
+      cursor: pointer
+    &_content-form
+      display: grid
+      grid-template-columns: 390px
+    &_content-mail
+      text-transform: uppercase
+      font-size: 12px
+      list-style: height 1.67
+      padding-bottom: 16px
+      padding-top: 15px
+      &_red
+        font-size: 17px
+        color: $accent
+    &_content-input
+      padding: 12px
+      border: 1px solid #eaeaea
+      outline: none
+    &_content-login
+      width: 180px
+      padding: 19px 53px
+      border: 1px solid #eaeaea
+      background-color: #fff
+      cursor: pointer
+    &_button-forgot
+      display: grid
+      grid-template-columns: repeat(2, max-content)
+    &_content-button-forgot
+      display: grid
+      grid-template-columns: 1fr 1fr
+      align-items: center
 
 .radiobtn
   position: absolute
@@ -1242,10 +1446,12 @@
     position: relative
     padding: 0 0 0 30px
     cursor: pointer
+    text-transform: uppercase
+    font-size: 12px
     &:before
       content: " "
       position: absolute
-      top: 4px
+      top: 1px
       left: 0
       width: 14px
       height: 14px
@@ -1255,7 +1461,7 @@
     &:after
       content: " "
       position: absolute
-      top: 8px
+      top: 5px
       left: 4px
       width: 6px
       height: 6px

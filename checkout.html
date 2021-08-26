@@ -201,72 +201,285 @@
   <section class="checkout">
     <div class="container">
       <div class="checkout__accordion">
-        <div>
-          <input type="checkbox" id="question1" name="accordion" class="checkout__accordion_input">
-          <label for="question1" class="checkout__accordion_label">01. Shipping Adress</label>
+        <div class="checkout__accordion_item">
+          <input type="checkbox" id="question1" name="accordion" checked="checked" class="checkout__accordion_input">
+          <label for="question1" class="checkout__accordion_label">01.&nbsp Shipping Adress</label>
           <div class="checkout__accordion_content">
-            <p class="checkout__accordion_content-head">check as a guest or register</p>
-            <p class="checkout__accordion_text">Register with us for future convenience</p>
-            <div class="accordion__content_radiobtn">
-              <input class="radiobtn" id="first-btn" type="radio" name="radiobtn" required checked="checked" />
-              <label for="first-btn">checkout as guest</label>
-              <br>
-              <input class="radiobtn" id="second-btn" type="radio" name="radiobtn" required />
-              <label for="second-btn">register</label>
+            <div class="checkout__accordion_content-left">
+              <p class="checkout__accordion_content-head">check as a guest or register</p>
+              <p class="checkout__accordion_content-text">Register with us for future convenience</p>
+              <div class="checkout__accordion_content_radiobtn">
+                <input class="radiobtn" id="btn1" type="radio" name="radiobtn" required checked="checked" />
+                <label for="btn1">checkout as guest</label>
+                <br>
+                <input class="radiobtn" id="btn2" type="radio" name="radiobtn" required />
+                <label for="btn2">register</label>
+              </div>
+              <p class="checkout__accordion_content-head">register and save time!</p>
+              <p class="checkout__accordion_content-text">Register with us for future convenience</p>
+              <div class="checkout__accordion_content-text_easy">
+                <p class="checkout__accordion_content-text"><span
+                    class="checkout__accordion_content-text_span">&#187</span> Fast and easy checkout</p>
+                <p class="checkout__accordion_content-text"><span
+                    class="checkout__accordion_content-text_span">&#187</span>
+                  Easy access to your order history and
+                  status</p>
+              </div>
+              <button class="checkout__accordion_content-continue">continue</button>
             </div>
-            <p class="checkout__accordion_content-head">register and save time</p>
-            <p class="checkout__accordion_text">Register with us for future convenience</p>
+            <div class="checkout__accordion_content-right">
+              <p class="checkout__accordion_content-head">already registed?</p>
+              <p class="checkout__accordion_content-text">Please log in below</p>
+              <form class="checkout__accordion_content-form" action="#">
+                <label for="mail1" class="checkout__accordion_content-mail">email address <span
+                    class="checkout__accordion_content-mail_red">*</span></label>
+                <input id="mail1" class="checkout__accordion_content-input" type="text" name="mail">
+                <label for="password1" class="checkout__accordion_content-mail">password <span
+                    class="checkout__accordion_content-mail_red">*</span></label>
+                <input id="password1" class="checkout__accordion_content-input" type="text" name="password">
+                <p class="checkout__accordion_content-text_red"><sup>+</sup> Required Fileds</p>
+                <div class="checkout__accordion_content-button-forgot">
+                  <button class="checkout__accordion_content-login">LOGIN</button>
+                  <p class="checkout__accordion_content-text-pass">Forgot Password?</p>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-        <div>
+        <div class="checkout__accordion_item">
           <input type="checkbox" id="question2" name="accordion" class="checkout__accordion_input">
-          <label for="question2" class="checkout__accordion_label">01. Shipping Adress</label>
+          <label for="question2" class="checkout__accordion_label">02.&nbsp billing information</label>
           <div class="checkout__accordion_content">
-            <p class="checkout__accordion_content-head">check as a guest or register</p>
-            <p class="checkout__accordion_text">Register with us for future convenience</p>
-            <div class="accordion__content_radiobtn">
-              <input class="radiobtn" id="first-btn" type="radio" name="radiobtn" required checked="checked" />
-              <label for="first-btn">checkout as guest</label>
-              <br>
-              <input class="radiobtn" id="second-btn" type="radio" name="radiobtn" required />
-              <label for="second-btn">register</label>
+            <div class="checkout__accordion_content-left">
+              <p class="checkout__accordion_content-head">check as a guest or register</p>
+              <p class="checkout__accordion_content-text">Register with us for future convenience</p>
+              <div class="checkout__accordion_content_radiobtn">
+                <input class="radiobtn" id="btn3" type="radio" name="radiobtn" />
+                <label for="btn3">checkout as guest</label>
+                <br>
+                <input class="radiobtn" id="btn4" type="radio" name="radiobtn" required />
+                <label for="btn4">register</label>
+              </div>
+              <p class="checkout__accordion_content-head">register and save time!</p>
+              <p class="checkout__accordion_content-text">Register with us for future convenience</p>
+              <div class="checkout__accordion_content-text_easy">
+                <p class="checkout__accordion_content-text"><span
+                    class="checkout__accordion_content-text_span">&#187</span> Fast and easy checkout</p>
+                <p class="checkout__accordion_content-text"><span
+                    class="checkout__accordion_content-text_span">&#187</span>
+                  Easy access to your order history and
+                  status</p>
+              </div>
+              <button class="checkout__accordion_content-continue">continue</button>
             </div>
-            <p class="checkout__accordion_content-head">register and save time</p>
-            <p class="checkout__accordion_text">Register with us for future convenience</p>
+            <div class="checkout__accordion_content-right">
+              <p class="checkout__accordion_content-head">already registed?</p>
+              <p class="checkout__accordion_content-text">Please log in below</p>
+              <form class="checkout__accordion_content-form" action="#">
+                <label for="mail2" class="checkout__accordion_content-mail">email address <span
+                    class="checkout__accordion_content-mail_red">*</span></label>
+                <input id="mail2" class="checkout__accordion_content-input" type="text" name="mail">
+                <label for="password2" class="checkout__accordion_content-mail">password <span
+                    class="checkout__accordion_content-mail_red">*</span></label>
+                <input id="password2" class="checkout__accordion_content-input" type="text" name="password">
+                <p class="checkout__accordion_content-text_red"><sup>+</sup> Required Fileds</p>
+                <div class="checkout__accordion_content-button-forgot">
+                  <button class="checkout__accordion_content-login">LOGIN</button>
+                  <p class="checkout__accordion_content-text-pass">Forgot Password?</p>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-
-        <!-- <label class="accordion">
-        <input type='checkbox' name='checkbox-accordion'>
-        <div class="accordion__header">01. Shipping Adress</div>
-        <div class="accordion__content">
-          <div class="accordion__content_left">
-            <div class="accordion__content_top">
-              <p class="accordion__content_head">check as a guest or register</p>
-              <p class="accordion__content_text">Register with us for future convenience</p>
+        <div class="checkout__accordion_item">
+          <input type="checkbox" id="question3" name="accordion" class="checkout__accordion_input">
+          <label for="question3" class="checkout__accordion_label">03.&nbsp shipping information</label>
+          <div class="checkout__accordion_content">
+            <div class="checkout__accordion_content-left">
+              <p class="checkout__accordion_content-head">check as a guest or register</p>
+              <p class="checkout__accordion_content-text">Register with us for future convenience</p>
+              <div class="checkout__accordion_content_radiobtn">
+                <input class="radiobtn" id="btn5" type="radio" name="radiobtn" required />
+                <label for="btn5">checkout as guest</label>
+                <br>
+                <input class="radiobtn" id="btn6" type="radio" name="radiobtn" required />
+                <label for="btn6">register</label>
+              </div>
+              <p class="checkout__accordion_content-head">register and save time!</p>
+              <p class="checkout__accordion_content-text">Register with us for future convenience</p>
+              <div class="checkout__accordion_content-text_easy">
+                <p class="checkout__accordion_content-text"><span
+                    class="checkout__accordion_content-text_span">&#187</span> Fast and easy checkout</p>
+                <p class="checkout__accordion_content-text"><span
+                    class="checkout__accordion_content-text_span">&#187</span>
+                  Easy access to your order history and
+                  status</p>
+              </div>
+              <button class="checkout__accordion_content-continue">continue</button>
             </div>
-            <div class="accordion__content_radiobtn">
-              <input class="radiobtn" id="first-btn" type="radio" name="radiobtn" required checked="checked" />
-              <label for="first-btn">checkout as guest</label>
-              <br>
-              <input class="radiobtn" id="second-btn" type="radio" name="radiobtn" required />
-              <label for="second-btn">register</label>
-            </div>
-            <div class="accordion__content_down">
-              <p class="accordion__content_head">register and save time</p>
-              <p class="accordion__content_text">Register with us for future convenience</p>
-            </div>
-          </div>
-          <div class="accordion__content_right">
-            <div class="accordion__content_top">
-              <p class="accordion__content_head">check as a guest or register</p>
-              <p class="accordion__content_text">Register with us for future convenience</p>
+            <div class="checkout__accordion_content-right">
+              <p class="checkout__accordion_content-head">already registed?</p>
+              <p class="checkout__accordion_content-text">Please log in below</p>
+              <form class="checkout__accordion_content-form" action="#">
+                <label for="mail3" class="checkout__accordion_content-mail">email address <span
+                    class="checkout__accordion_content-mail_red">*</span></label>
+                <input id="mail3" class="checkout__accordion_content-input" type="text" name="mail">
+                <label for="password3" class="checkout__accordion_content-mail">password <span
+                    class="checkout__accordion_content-mail_red">*</span></label>
+                <input id="password3" class="checkout__accordion_content-input" type="text" name="password">
+                <p class="checkout__accordion_content-text_red"><sup>+</sup> Required Fileds</p>
+                <div class="checkout__accordion_content-button-forgot">
+                  <button class="checkout__accordion_content-login">LOGIN</button>
+                  <p class="checkout__accordion_content-text-pass">Forgot Password?</p>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-      </label> -->
-
-
+        <div class="checkout__accordion_item">
+          <input type="checkbox" id="question4" name="accordion" class="checkout__accordion_input">
+          <label for="question4" class="checkout__accordion_label">04.&nbsp shipping method</label>
+          <div class="checkout__accordion_content">
+            <div class="checkout__accordion_content-left">
+              <p class="checkout__accordion_content-head">check as a guest or register</p>
+              <p class="checkout__accordion_content-text">Register with us for future convenience</p>
+              <div class="checkout__accordion_content_radiobtn">
+                <input class="radiobtn" id="btn7" type="radio" name="radiobtn" required />
+                <label for="btn7">checkout as guest</label>
+                <br>
+                <input class="radiobtn" id="btn8" type="radio" name="radiobtn" required />
+                <label for="btn8">register</label>
+              </div>
+              <p class="checkout__accordion_content-head">register and save time!</p>
+              <p class="checkout__accordion_content-text">Register with us for future convenience</p>
+              <div class="checkout__accordion_content-text_easy">
+                <p class="checkout__accordion_content-text"><span
+                    class="checkout__accordion_content-text_span">&#187</span> Fast and easy checkout
+                </p>
+                <p class="checkout__accordion_content-text"><span
+                    class="checkout__accordion_content-text_span">&#187</span>
+                  Easy access to your order history and
+                  status</p>
+              </div>
+              <button class="checkout__accordion_content-continue">continue</button>
+            </div>
+            <div class="checkout__accordion_content-right">
+              <p class="checkout__accordion_content-head">already registed?</p>
+              <p class="checkout__accordion_content-text">Please log in below</p>
+              <form class="checkout__accordion_content-form" action="#">
+                <label for="mail4" class="checkout__accordion_content-mail">email address <span
+                    class="checkout__accordion_content-mail_red">*</span></label>
+                <input id="mail4" class="checkout__accordion_content-input" type="text" name="mail">
+                <label for="password4" class="checkout__accordion_content-mail">password <span
+                    class="checkout__accordion_content-mail_red">*</span></label>
+                <input id="password4" class="checkout__accordion_content-input" type="text" name="password">
+                <p class="checkout__accordion_content-text_red"><sup>+</sup> Required Fileds</p>
+                <div class="checkout__accordion_content-button-forgot">
+                  <button class="checkout__accordion_content-login">LOGIN</button>
+                  <p class="checkout__accordion_content-text-pass">Forgot Password?</p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="checkout__accordion_item">
+          <input type="checkbox" id="question5" name="accordion" class="checkout__accordion_input">
+          <label for="question5" class="checkout__accordion_label">05.&nbsp payment method</label>
+          <div class="checkout__accordion_content">
+            <div class="checkout__accordion_content-left">
+              <p class="checkout__accordion_content-head">check as a guest or register</p>
+              <p class="checkout__accordion_content-text">Register with us for future
+                convenience</p>
+              <div class="checkout__accordion_content_radiobtn">
+                <input class="radiobtn" id="btn9" type="radio" name="radiobtn" required />
+                <label for="btn9">checkout as guest</label>
+                <br>
+                <input class="radiobtn" id="btn10" type="radio" name="radiobtn" required />
+                <label for="btn10">register</label>
+              </div>
+              <p class="checkout__accordion_content-head">register and save time!</p>
+              <p class="checkout__accordion_content-text">Register with us for future
+                convenience</p>
+              <div class="checkout__accordion_content-text_easy">
+                <p class="checkout__accordion_content-text"><span
+                    class="checkout__accordion_content-text_span">&#187</span> Fast and easy
+                  checkout</p>
+                <p class="checkout__accordion_content-text"><span
+                    class="checkout__accordion_content-text_span">&#187</span>
+                  Easy access to your order history and
+                  status</p>
+              </div>
+              <button class="checkout__accordion_content-continue">continue</button>
+            </div>
+            <div class="checkout__accordion_content-right">
+              <p class="checkout__accordion_content-head">already registed?</p>
+              <p class="checkout__accordion_content-text">Please log in below</p>
+              <form class="checkout__accordion_content-form" action="#">
+                <label for="mail5" class="checkout__accordion_content-mail">email address <span
+                    class="checkout__accordion_content-mail_red">*</span></label>
+                <input id="mail5" class="checkout__accordion_content-input" type="text" name="mail">
+                <label for="password5" class="checkout__accordion_content-mail">password <span
+                    class="checkout__accordion_content-mail_red">*</span></label>
+                <input id="password5" class="checkout__accordion_content-input" type="text" name="password">
+                <p class="checkout__accordion_content-text_red"><sup>+</sup> Required Fileds</p>
+                <div class="checkout__accordion_content-button-forgot">
+                  <button class="checkout__accordion_content-login">LOGIN</button>
+                  <p class="checkout__accordion_content-text-pass">Forgot Password?</p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="checkout__accordion_item">
+          <input type="checkbox" id="question6" name="accordion" class="checkout__accordion_input">
+          <label for="question6" class="checkout__accordion_label">06.&nbsp order review</label>
+          <div class="checkout__accordion_content">
+            <div class="checkout__accordion_content-left">
+              <p class="checkout__accordion_content-head">check as a guest or register
+              </p>
+              <p class="checkout__accordion_content-text">Register with us for future
+                convenience</p>
+              <div class="checkout__accordion_content_radiobtn">
+                <input class="radiobtn" id="btn11" type="radio" name="radiobtn" required />
+                <label for="btn11">checkout as guest</label>
+                <br>
+                <input class="radiobtn" id="btn12" type="radio" name="radiobtn" required />
+                <label for="btn12">register</label>
+              </div>
+              <p class="checkout__accordion_content-head">register and save time!</p>
+              <p class="checkout__accordion_content-text">Register with us for future
+                convenience</p>
+              <div class="checkout__accordion_content-text_easy">
+                <p class="checkout__accordion_content-text"><span
+                    class="checkout__accordion_content-text_span">&#187</span> Fast and
+                  easy checkout</p>
+                <p class="checkout__accordion_content-text"><span
+                    class="checkout__accordion_content-text_span">&#187</span>
+                  Easy access to your order history and
+                  status</p>
+              </div>
+              <button class="checkout__accordion_content-continue">continue</button>
+            </div>
+            <div class="checkout__accordion_content-right">
+              <p class="checkout__accordion_content-head">already registed?</p>
+              <p class="checkout__accordion_content-text">Please log in below</p>
+              <form class="checkout__accordion_content-form" action="#">
+                <label for="mail6" class="checkout__accordion_content-mail">email address
+                  <span class="checkout__accordion_content-mail_red">*</span></label>
+                <input id="mail6" class="checkout__accordion_content-input" type="text" name="mail">
+                <label for="password6" class="checkout__accordion_content-mail">password
+                  <span class="checkout__accordion_content-mail_red">*</span></label>
+                <input id="password6" class="checkout__accordion_content-input" type="text" name="password">
+                <p class="checkout__accordion_content-text_red"><sup>+</sup> Required
+                  Fileds</p>
+                <div class="checkout__accordion_content-button-forgot">
+                  <button class="checkout__accordion_content-login">LOGIN</button>
+                  <p class="checkout__accordion_content-text-pass">Forgot Password?</p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -299,8 +512,8 @@
       <div class="footer__list1">
         <div class="footer__item">
           <div class="footer__item__logo">
-            <a class="" href="#"><img src="./build/img/logo.png" alt="logo"></a>
-            <a class="header__logo" href="#">BRAN<span class="header__logo_other-color">D</span></a>
+            <a class="" href="index.html"><img src="./build/img/logo.png" alt="logo"></a>
+            <a class="header__logo" href="index.html">BRAN<span class="header__logo_other-color">D</span></a>
           </div>
           <p class="footer__item__text">Objectively transition extensive data rather than cross functional
             solutions. Monotonectally
