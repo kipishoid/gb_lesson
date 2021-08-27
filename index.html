@@ -7,7 +7,6 @@
     <title>Shop</title>
     <link rel="stylesheet" href="build/css/style.css">
     <link rel="shortcut icon" href="build/img/favicon.ico" type="image/x-icon">
-    <title>lesson_1_1</title>
 </head>
 
 <body>
@@ -15,8 +14,8 @@
     <header class="header">
         <div class="container header__flex">
             <div class="header__left">
-                <a class="" href="#"><img src="./build/img/logo.png" alt="logo"></a>
-                <a class="header__logo href=" #">BRAN<span class="header__logo_other-color">D</span></a>
+                <a href="#"><img src="./build/img/logo.png" alt="logo"></a>
+                <a class="header__logo" href="index.html">BRAN<span class="header__logo_other-color">D</span></a>
                 <form class="header__form" action="#">
                     <details class="header__form_browse">
                         <summary class="header__summary-search">Browse</summary>
@@ -52,9 +51,42 @@
                 </form>
             </div>
             <div class="header__right">
-                <a class="basket" href="#"><img src="./build/img/basket.png" alt="basket"></a>
+                <a class="basket" href="shoppingcart.html"><img src="./build/img/basket.png" alt="basket"></a>
                 <details class="button__logo">
                     <summary class="summary__basket">My Account</summary>
+                    <div class="dropdown__menu dropdown__menu_account">
+                        <div class="dropdown__menu_account-list dropdown__menu_account-list1">
+                            <a href="single.html" class="dropdown__menu_account-link"><img
+                                    src="build/img/account_mini1.png" alt="account_product"></a>
+                            <div class="dropdown__menu_account-list_text">
+                                <p class="dropdown__menu_account-list_text-content">rebox zane</p>
+                                <img src="/build/img/star.png" alt="star">
+                                <p class="dropdown__menu_account-list_text-content1">1 x $250</p>
+                            </div>
+
+                            <img class="" src="/build/img/close.png" alt="close">
+                        </div>
+                        <div class="dropdown__menu_account-list dropdown__menu_account-list2">
+                            <a href="single.html" class="dropdown__menu_account-link"><img
+                                    src="build/img/account_mini2.png" alt="account_product"></a>
+                            <div class="dropdown__menu_account-list_text">
+                                <p class="dropdown__menu_account-list_text-content">rebox zane</p>
+                                <img src="/build/img/star.png" alt="star">
+                                <p class="dropdown__menu_account-list_text-content1">1 x $250</p>
+                            </div>
+                            <img class="" src="/build/img/close.png" alt="close">
+                        </div>
+                        <div class="dropdown__menu_account-list_text-total">
+                            <p class="dropdown__menu_account-list_text-total1">total</p>
+                            <p class="dropdown__menu_account-list_text-total1">$500.00</p>
+                        </div>
+                        <a href="checkout.html"><button
+                                class="dropdown__menu_account-list_text-btn">checkout</button></a>
+                        <a href="shoppingcart.html"><button
+                                class="dropdown__menu_account-list_text-btn dropdown__menu_account-list_text-btn_gray">go
+                                to
+                                cart</button></a>
+                    </div>
                 </details>
             </div>
         </div>
@@ -62,7 +94,7 @@
     <nav class="header-nav">
         <div class="container">
             <ul class="menu">
-                <li class="menu__list"><a href="#" class="menu__link"></a>Home</li>
+                <li class="menu__list"><a href="index.html" class="menu__link"></a>Home</li>
                 <li class="menu__list"><a href="#" class="menu__link"></a>Men
                     <div class="mega__box">
                         <div class="mega__box__item">
@@ -75,6 +107,7 @@
                             <a class="mega__box__link" href="#">Denim</a>
                             <a class="mega__box__link" href="#">Leggings/Pants</a>
                             <a class="mega__box__link" href="#">Skirts/Shorts</a>
+                            <a class="mega__box__link" href="#">Accessories</a>
                         </div>
                         <div class="mega__box__item">
                             <h3 class="mega__box__heading">men</h3>
@@ -82,10 +115,10 @@
                             <a class="mega__box__link" href="#">Tops</a>
                             <a class="mega__box__link" href="#">Sweaters/Knits</a>
                             <a class="mega__box__link" href="#">Jackets/Coats</a>
-                            <a class="mega__box__link" href="#">Blazers</a>
-                            <a class="mega__box__link" href="#">Denim</a>
-                            <a class="mega__box__link" href="#">Leggings/Pants</a>
-                            <a class="mega__box__link" href="#">Skirts/Shorts</a>
+                            <h3 class="mega__box__heading mega__box__heading1">men</h3>
+                            <a class="mega__box__link" href="#">Dresses</a>
+                            <a class="mega__box__link" href="#">Tops</a>
+                            <a class="mega__box__link" href="#">Sweaters/Knits</a>
                         </div>
                         <div class="mega__box__item">
                             <h3 class="mega__box__heading">men</h3>
@@ -93,18 +126,53 @@
                             <a class="mega__box__link" href="#">Tops</a>
                             <a class="mega__box__link" href="#">Sweaters/Knits</a>
                             <a class="mega__box__link" href="#">Jackets/Coats</a>
-                            <a class="mega__box__link" href="#">Blazers</a>
-                            <a class="mega__box__link" href="#">Denim</a>
-                            <a class="mega__box__link" href="#">Leggings/Pants</a>
-                            <a class="mega__box__link" href="#">Skirts/Shorts</a>
+                            <a href="checkout.html"><img class="mega__box__link-img" src="/build/img/menu_img.png"
+                                    alt="men"></a>
+                            <p class="mega__box__link-img-sale">Super <br> sale!</p>
                         </div>
                     </div>
                 </li>
-                <li class="menu__list"><a href="#" class="menu__link"></a>Women</li>
+                <li class="menu__list"><a href="#" class="menu__link"></a>Women
+                    <div class="mega__box">
+                        <div class="mega__box__item">
+                            <h3 class="mega__box__heading">women</h3>
+                            <a class="mega__box__link" href="#">Dresses</a>
+                            <a class="mega__box__link" href="#">Tops</a>
+                            <a class="mega__box__link" href="#">Sweaters/Knits</a>
+                            <a class="mega__box__link" href="#">Jackets/Coats</a>
+                            <a class="mega__box__link" href="#">Blazers</a>
+                            <a class="mega__box__link" href="#">Denim</a>
+                            <a class="mega__box__link" href="#">Leggings/Pants</a>
+                            <a class="mega__box__link" href="#">Skirts/Shorts</a>
+                            <a class="mega__box__link" href="#">Accessories</a>
+                        </div>
+                        <div class="mega__box__item">
+                            <h3 class="mega__box__heading">women</h3>
+                            <a class="mega__box__link" href="#">Dresses</a>
+                            <a class="mega__box__link" href="#">Tops</a>
+                            <a class="mega__box__link" href="#">Sweaters/Knits</a>
+                            <a class="mega__box__link" href="#">Jackets/Coats</a>
+                            <h3 class="mega__box__heading mega__box__heading1">women</h3>
+                            <a class="mega__box__link" href="#">Dresses</a>
+                            <a class="mega__box__link" href="#">Tops</a>
+                            <a class="mega__box__link" href="#">Sweaters/Knits</a>
+                        </div>
+                        <div class="mega__box__item">
+                            <h3 class="mega__box__heading">women</h3>
+                            <a class="mega__box__link" href="#">Dresses</a>
+                            <a class="mega__box__link" href="#">Tops</a>
+                            <a class="mega__box__link" href="#">Sweaters/Knits</a>
+                            <a class="mega__box__link" href="#">Jackets/Coats</a>
+                            <a href="checkout.html"><img class="mega__box__link-img" src="/build/img/menu_img.png"
+                                    alt="men"></a>
+                            <p class="mega__box__link-img-sale">Super <br> sale!</p>
+                        </div>
+                    </div>
+                </li>
                 <li class="menu__list"><a href="#" class="menu__link"></a>Kids
                     <div class="mega__box">
                         <div class="mega__box__item">
-                            <h3 class="mega__box__heading">men</h3>
+                            <h3 class="mega__box__heading">kids</h3>
                             <a class="mega__box__link" href="#">Dresses</a>
                             <a class="mega__box__link" href="#">Tops</a>
                             <a class="mega__box__link" href="#">Sweaters/Knits</a>
@@ -113,33 +181,32 @@
                             <a class="mega__box__link" href="#">Denim</a>
                             <a class="mega__box__link" href="#">Leggings/Pants</a>
                             <a class="mega__box__link" href="#">Skirts/Shorts</a>
+                            <a class="mega__box__link" href="#">Accessories</a>
                         </div>
                         <div class="mega__box__item">
-                            <h3 class="mega__box__heading">men</h3>
+                            <h3 class="mega__box__heading">kids</h3>
                             <a class="mega__box__link" href="#">Dresses</a>
                             <a class="mega__box__link" href="#">Tops</a>
                             <a class="mega__box__link" href="#">Sweaters/Knits</a>
                             <a class="mega__box__link" href="#">Jackets/Coats</a>
-                            <a class="mega__box__link" href="#">Blazers</a>
-                            <a class="mega__box__link" href="#">Denim</a>
-                            <a class="mega__box__link" href="#">Leggings/Pants</a>
-                            <a class="mega__box__link" href="#">Skirts/Shorts</a>
+                            <h3 class="mega__box__heading mega__box__heading1">kids</h3>
+                            <a class="mega__box__link" href="#">Dresses</a>
+                            <a class="mega__box__link" href="#">Tops</a>
+                            <a class="mega__box__link" href="#">Sweaters/Knits</a>
                         </div>
                         <div class="mega__box__item">
-                            <h3 class="mega__box__heading">men</h3>
+                            <h3 class="mega__box__heading">kids</h3>
                             <a class="mega__box__link" href="#">Dresses</a>
                             <a class="mega__box__link" href="#">Tops</a>
                             <a class="mega__box__link" href="#">Sweaters/Knits</a>
                             <a class="mega__box__link" href="#">Jackets/Coats</a>
-                            <a class="mega__box__link" href="#">Blazers</a>
-                            <a class="mega__box__link" href="#">Denim</a>
-                            <a class="mega__box__link" href="#">Leggings/Pants</a>
-                            <a class="mega__box__link" href="#">Skirts/Shorts</a>
+                            <a href="checkout.html"><img class="mega__box__link-img" src="/build/img/menu_img.png"
+                                    alt="men"></a>
+                            <p class="mega__box__link-img-sale">Super <br> sale!</p>
                         </div>
                     </div>
                 </li>
-                <li class="menu__list"><a href="#" class="menu__link"></a>Accoseriese</li>
-                <li class="menu__list menu__list__last"><a href="#" class="menu__link"></a>Featured
+                <li class="menu__list menu__list_last"><a href="#" class="menu__link"></a>Accoseriese
                     <div class="mega__box">
                         <div class="mega__box__item">
                             <h3 class="mega__box__heading">men</h3>
@@ -151,32 +218,105 @@
                             <a class="mega__box__link" href="#">Denim</a>
                             <a class="mega__box__link" href="#">Leggings/Pants</a>
                             <a class="mega__box__link" href="#">Skirts/Shorts</a>
+                            <a class="mega__box__link" href="#">Accessories</a>
                         </div>
                         <div class="mega__box__item">
-                            <h3 class="mega__box__heading">men</h3>
+                            <h3 class="mega__box__heading">women</h3>
                             <a class="mega__box__link" href="#">Dresses</a>
                             <a class="mega__box__link" href="#">Tops</a>
                             <a class="mega__box__link" href="#">Sweaters/Knits</a>
                             <a class="mega__box__link" href="#">Jackets/Coats</a>
-                            <a class="mega__box__link" href="#">Blazers</a>
-                            <a class="mega__box__link" href="#">Denim</a>
-                            <a class="mega__box__link" href="#">Leggings/Pants</a>
-                            <a class="mega__box__link" href="#">Skirts/Shorts</a>
+                            <h3 class="mega__box__heading mega__box__heading1">kids</h3>
+                            <a class="mega__box__link" href="#">Dresses</a>
+                            <a class="mega__box__link" href="#">Tops</a>
+                            <a class="mega__box__link" href="#">Sweaters/Knits</a>
                         </div>
                         <div class="mega__box__item">
-                            <h3 class="mega__box__heading">men</h3>
+                            <h3 class="mega__box__heading">kids</h3>
                             <a class="mega__box__link" href="#">Dresses</a>
                             <a class="mega__box__link" href="#">Tops</a>
                             <a class="mega__box__link" href="#">Sweaters/Knits</a>
                             <a class="mega__box__link" href="#">Jackets/Coats</a>
-                            <a class="mega__box__link" href="#">Blazers</a>
-                            <a class="mega__box__link" href="#">Denim</a>
-                            <a class="mega__box__link" href="#">Leggings/Pants</a>
-                            <a class="mega__box__link" href="#">Skirts/Shorts</a>
+                            <a href="checkout.html"><img class="mega__box__link-img" src="/build/img/menu_img.png"
+                                    alt="men"></a>
+                            <p class="mega__box__link-img-sale">Super <br> sale!</p>
                         </div>
                     </div>
                 </li>
-                <li class="menu__list"><a href="#" class="menu__link"></a>Hot Deals</li>
+                <li class="menu__list menu__list_last"><a href="#" class="menu__link"></a>Featured
+                    <div class="mega__box">
+                        <div class="mega__box__item">
+                            <h3 class="mega__box__heading">women</h3>
+                            <a class="mega__box__link" href="#">Dresses</a>
+                            <a class="mega__box__link" href="#">Tops</a>
+                            <a class="mega__box__link" href="#">Sweaters/Knits</a>
+                            <a class="mega__box__link" href="#">Jackets/Coats</a>
+                            <a class="mega__box__link" href="#">Blazers</a>
+                            <a class="mega__box__link" href="#">Denim</a>
+                            <a class="mega__box__link" href="#">Leggings/Pants</a>
+                            <a class="mega__box__link" href="#">Skirts/Shorts</a>
+                            <a class="mega__box__link" href="#">Accessories</a>
+                        </div>
+                        <div class="mega__box__item">
+                            <h3 class="mega__box__heading">women</h3>
+                            <a class="mega__box__link" href="#">Dresses</a>
+                            <a class="mega__box__link" href="#">Tops</a>
+                            <a class="mega__box__link" href="#">Sweaters/Knits</a>
+                            <a class="mega__box__link" href="#">Jackets/Coats</a>
+                            <h3 class="mega__box__heading mega__box__heading1">women</h3>
+                            <a class="mega__box__link" href="#">Dresses</a>
+                            <a class="mega__box__link" href="#">Tops</a>
+                            <a class="mega__box__link" href="#">Sweaters/Knits</a>
+                        </div>
+                        <div class="mega__box__item">
+                            <h3 class="mega__box__heading">women</h3>
+                            <a class="mega__box__link" href="#">Dresses</a>
+                            <a class="mega__box__link" href="#">Tops</a>
+                            <a class="mega__box__link" href="#">Sweaters/Knits</a>
+                            <a class="mega__box__link" href="#">Jackets/Coats</a>
+                            <a href="checkout.html"><img class="mega__box__link-img" src="/build/img/menu_img.png"
+                                    alt="men"></a>
+                            <p class="mega__box__link-img-sale">Super <br> sale!</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu__list menu__list_last"><a href="#" class="menu__link"></a>Hot Deals
+                    <div class="mega__box">
+                        <div class="mega__box__item">
+                            <h3 class="mega__box__heading">women</h3>
+                            <a class="mega__box__link" href="#">Dresses</a>
+                            <a class="mega__box__link" href="#">Tops</a>
+                            <a class="mega__box__link" href="#">Sweaters/Knits</a>
+                            <a class="mega__box__link" href="#">Jackets/Coats</a>
+                            <a class="mega__box__link" href="#">Blazers</a>
+                            <a class="mega__box__link" href="#">Denim</a>
+                            <a class="mega__box__link" href="#">Leggings/Pants</a>
+                            <a class="mega__box__link" href="#">Skirts/Shorts</a>
+                            <a class="mega__box__link" href="#">Accessories</a>
+                        </div>
+                        <div class="mega__box__item">
+                            <h3 class="mega__box__heading">women</h3>
+                            <a class="mega__box__link" href="#">Dresses</a>
+                            <a class="mega__box__link" href="#">Tops</a>
+                            <a class="mega__box__link" href="#">Sweaters/Knits</a>
+                            <a class="mega__box__link" href="#">Jackets/Coats</a>
+                            <h3 class="mega__box__heading mega__box__heading1">women</h3>
+                            <a class="mega__box__link" href="#">Dresses</a>
+                            <a class="mega__box__link" href="#">Tops</a>
+                            <a class="mega__box__link" href="#">Sweaters/Knits</a>
+                        </div>
+                        <div class="mega__box__item">
+                            <h3 class="mega__box__heading">women</h3>
+                            <a class="mega__box__link" href="#">Dresses</a>
+                            <a class="mega__box__link" href="#">Tops</a>
+                            <a class="mega__box__link" href="#">Sweaters/Knits</a>
+                            <a class="mega__box__link" href="#">Jackets/Coats</a>
+                            <a href="checkout.html"><img class="mega__box__link-img" src="/build/img/menu_img.png"
+                                    alt="men"></a>
+                            <p class="mega__box__link-img-sale">Super <br> sale!</p>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>
@@ -191,36 +331,31 @@
     </div>
     <section class="promo">
         <div class="container promo__list">
-            <div class="promo__left">
-                <div class="promo__card">
-                    <a href="product.html">
-                        <img class="promo__photo1" src="./build/img/promo_1.png" alt="photo">
-                        <p class="promo__hot">HOT DEAL <span class="promo__formen">FOR MEN</span></p>
-                    </a>
-                </div>
-                <div class="promo__card">
-                    <a href="product.html">
-                        <img class="promo__photo2" src="./build/img/promo_2.png" alt="photo">
-                        <p class="promo__hot promo__trendy">LUXIROUS & TRENDY <span
-                                class="promo__formen">ACCESORIES</span>
-                        </p>
-                    </a>
-                </div>
-            </div>
-            <div class="promo__right">
-                <div class="promo__card">
-                    <a href="product.html">
-                        <img class="promo__photo3" src="./build/img/promo_3.png" alt="photo">
-                        <p class="promo__hot promo__forwomen">30% offer <span class="promo__formen">women</span></p>
-                    </a>
-                </div>
-                <div class="promo__card">
-                    <a href="product.html">
-                        <img class="promo__photo4" src="./build/img/promo_4.png" alt="photo">
-                        <p class="promo__hot promo__new">new arrivals <span class="promo__formen">FOR kids</span></p>
-                    </a>
-                </div>
-            </div>
+            <!-- <div class="promo__card1"> -->
+            <a class="promo__photo1" href="single.html">
+                <img class="promo__photo_img1" src="./build/img/promo_1.png" alt="photo">
+                <p class="promo__hot">HOT DEAL <span class="promo__formen">FOR MEN</span></p>
+            </a>
+            <!-- </div> -->
+            <!-- <div class="promo__card2"> -->
+            <a class="promo__photo2" href="single.html">
+                <img class="promo__photo_img2" src="./build/img/promo_2.png" alt="photo">
+                <p class="promo__hot promo__trendy">LUXIROUS & TRENDY <span class="promo__formen">ACCESORIES</span>
+                </p>
+            </a>
+            <!-- </div>
+            <div class="promo__card3"> -->
+            <a class="promo__photo3" href="single.html">
+                <img class="promo__photo_img3" src="./build/img/promo_3.png" alt="photo">
+                <p class="promo__hot promo__forwomen">30% offer <span class="promo__formen">women</span></p>
+            </a>
+            <!-- </div> -->
+            <!-- <div class="promo__card4"> -->
+            <a class="promo__photo4" href="single.html">
+                <img class="promo__photo_img4" src="./build/img/promo_4.png" alt="photo">
+                <p class="promo__hot promo__new">new arrivals <span class="promo__formen">FOR kids</span></p>
+            </a>
+            <!-- </div> -->
         </div>
     </section>
 
@@ -350,16 +485,12 @@
                     </div>
                 </div>
             </div>
+            <div class="cards__button-product">
+                <button class="cards__button-product_text">Browse All Product</button>
+            </div>
         </div>
     </section>
 
-    <div class="container button__product">
-        <button class="button__product__text">
-            <details>
-                <summary class="button__product__sum">Browse All Product</summary>
-            </details>
-        </button>
-    </div>
 
     <section class="bigbanner">
         <div class="container bigbanner__item">
@@ -479,13 +610,11 @@
                         © 2017 Brand All Rights Reserved.
                     </p>
                     <div class="footer__finish__social__right">
-                        <a href="#" class="footer__finish__social__link"><img src="build/img/facebook.png"
-                                alt="facebook"></a>
-                        <a href="#" class="footer__finish__social__link"><img src="build/img/twit.png"
-                                alt="twitter"></a>
-                        <a href="#" class="footer__finish__social__link"><img src="build/img/in.png" alt=""></a>
-                        <a href="#" class="footer__finish__social__link"><img src="build/img/print.png" alt=""></a>
-                        <a href="#" class="footer__finish__social__link"><img src="build/img/google.png" alt=""></a>
+                        <a target="_blank" href="https://www.facebook.com/" class="footer__finish__social_link1"></a>
+                        <a target="_blank" href="https://www.twitter.com/" class="footer__finish__social_link2"></a>
+                        <a target="_blank" href="#" class="footer__finish__social_link3"></a>
+                        <a target="_blank" href="#" class="footer__finish__social_link4"></a>
+                        <a target="_blank" href="#" class="footer__finish__social_link5"></a>
                     </div>
                 </div>
             </div>
