@@ -21,27 +21,27 @@
                         <summary class="header__summary-search">Browse</summary>
                         <div class="dropdown__menu">
                             <h3 class="dropdown__menu_heading">women</h3>
-                            <a class="dropdown__menu_item" href="single.html">Dresses</a>
-                            <a class="dropdown__menu_item" href="single.html">Tops</a>
-                            <a class="dropdown__menu_item" href="single.html">Sweaters/Knits</a>
-                            <a class="dropdown__menu_item" href="single.html">Jackets/Coats</a>
-                            <a class="dropdown__menu_item" href="single.html">Blazers</a>
-                            <a class="dropdown__menu_item" href="single.html">Denim</a>
-                            <a class="dropdown__menu_item" href="single.html">Leggings/Pants</a>
-                            <a class="dropdown__menu_item" href="single.html">Skirts/Shorts</a>
-                            <a class="dropdown__menu_item" href="single.html">Accessories</a>
-                            <a class="dropdown__menu_item" href="single.html">Bags/Purses</a>
-                            <a class="dropdown__menu_item" href="single.html">Swimwear/Underwear</a>
-                            <a class="dropdown__menu_item" href="single.html">Nightwear</a>
-                            <a class="dropdown__menu_item" href="single.html">Shoes</a>
-                            <a class="dropdown__menu_item" href="single.html">Beauty</a>
+                            <a class="dropdown__menu_item" href="product.html">Dresses</a>
+                            <a class="dropdown__menu_item" href="product.html">Tops</a>
+                            <a class="dropdown__menu_item" href="product.html">Sweaters/Knits</a>
+                            <a class="dropdown__menu_item" href="product.html">Jackets/Coats</a>
+                            <a class="dropdown__menu_item" href="product.html">Blazers</a>
+                            <a class="dropdown__menu_item" href="product.html">Denim</a>
+                            <a class="dropdown__menu_item" href="product.html">Leggings/Pants</a>
+                            <a class="dropdown__menu_item" href="product.html">Skirts/Shorts</a>
+                            <a class="dropdown__menu_item" href="product.html">Accessories</a>
+                            <a class="dropdown__menu_item" href="product.html">Bags/Purses</a>
+                            <a class="dropdown__menu_item" href="product.html">Swimwear/Underwear</a>
+                            <a class="dropdown__menu_item" href="product.html">Nightwear</a>
+                            <a class="dropdown__menu_item" href="product.html">Shoes</a>
+                            <a class="dropdown__menu_item" href="product.html">Beauty</a>
                             <h3 class="dropdown__menu_heading">men</h3>
-                            <a class="dropdown__menu_item" href="#">Tees/Tank tops</a>
-                            <a class="dropdown__menu_item" href="#">Shirts/Polos</a>
-                            <a class="dropdown__menu_item" href="#">Sweaters</a>
-                            <a class="dropdown__menu_item" href="#">Sweatshirts/Hoodies</a>
-                            <a class="dropdown__menu_item" href="#">Blazers</a>
-                            <a class="dropdown__menu_item" href="#">Jackets/vests</a>
+                            <a class="dropdown__menu_item" href="product.html">Tees/Tank tops</a>
+                            <a class="dropdown__menu_item" href="product.html">Shirts/Polos</a>
+                            <a class="dropdown__menu_item" href="product.html">Sweaters</a>
+                            <a class="dropdown__menu_item" href="product.html">Sweatshirts/Hoodies</a>
+                            <a class="dropdown__menu_item" href="product.html">Blazers</a>
+                            <a class="dropdown__menu_item" href="product.html">Jackets/vests</a>
                         </div>
                     </details>
                     <input class="header__text" type=search placeholder="Search for Item...">
@@ -51,7 +51,22 @@
                 </form>
             </div>
             <div class="header__right">
-                <a class="basket" href="shoppingcart.html"><img src="./build/img/basket.png" alt="basket"></a>
+                <span class="basket">
+                    <img class="bask__img" src="./build/img/basket.png" alt="basket">
+                    <span>0</span>
+                </span>
+                <div class="basket__product basket__product_hidden">
+                    <div class="basket__name basket__header">
+                        <div>Название товара</div>
+                        <div>Количество</div>
+                        <div>Цена за шт.</div>
+                        <div>Итого</div>
+                    </div>
+                    <div class="basket__total">
+                        Товаров в корзине на сумму:
+                        $<span class="basket__total_value">0</span>
+                    </div>
+                </div>
                 <details class="button__logo">
                     <summary class="summary__basket">My Account</summary>
                     <div class="dropdown__menu dropdown__menu_account">
@@ -91,6 +106,7 @@
             </div>
         </div>
     </header>
+
     <nav class="header-nav">
         <div class="container">
             <ul class="menu">
@@ -99,15 +115,15 @@
                     <div class="mega__box">
                         <div class="mega__box__item">
                             <h3 class="mega__box__heading">men</h3>
-                            <a class="mega__box__link" href="#">Dresses</a>
-                            <a class="mega__box__link" href="#">Tops</a>
-                            <a class="mega__box__link" href="#">Sweaters/Knits</a>
-                            <a class="mega__box__link" href="#">Jackets/Coats</a>
-                            <a class="mega__box__link" href="#">Blazers</a>
-                            <a class="mega__box__link" href="#">Denim</a>
-                            <a class="mega__box__link" href="#">Leggings/Pants</a>
-                            <a class="mega__box__link" href="#">Skirts/Shorts</a>
-                            <a class="mega__box__link" href="#">Accessories</a>
+                            <a class="mega__box__link" href="product.html">Dresses</a>
+                            <a class="mega__box__link" href="product.html">Tops</a>
+                            <a class="mega__box__link" href="product.html">Sweaters/Knits</a>
+                            <a class="mega__box__link" href="product.html">Jackets/Coats</a>
+                            <a class="mega__box__link" href="product.html">Blazers</a>
+                            <a class="mega__box__link" href="product.html">Denim</a>
+                            <a class="mega__box__link" href="product.html">Leggings/Pants</a>
+                            <a class="mega__box__link" href="product.html">Skirts/Shorts</a>
+                            <a class="mega__box__link" href="product.html">Accessories</a>
                         </div>
                         <div class="mega__box__item">
                             <h3 class="mega__box__heading">men</h3>
@@ -332,26 +348,26 @@
     <section class="promo">
         <div class="container promo__list">
             <!-- <div class="promo__card1"> -->
-            <a class="promo__photo1" href="single.html">
+            <a class="promo__photo1" href="product.html">
                 <img class="promo__photo_img1" src="./build/img/promo_1.png" alt="photo">
                 <p class="promo__hot">HOT DEAL <span class="promo__formen">FOR MEN</span></p>
             </a>
             <!-- </div> -->
             <!-- <div class="promo__card2"> -->
-            <a class="promo__photo2" href="single.html">
+            <a class="promo__photo2" href="product.html">
                 <img class="promo__photo_img2" src="./build/img/promo_2.png" alt="photo">
                 <p class="promo__hot promo__trendy">LUXIROUS & TRENDY <span class="promo__formen">ACCESORIES</span>
                 </p>
             </a>
             <!-- </div>
             <div class="promo__card3"> -->
-            <a class="promo__photo3" href="single.html">
+            <a class="promo__photo3" href="product.html">
                 <img class="promo__photo_img3" src="./build/img/promo_3.png" alt="photo">
                 <p class="promo__hot promo__forwomen">30% offer <span class="promo__formen">women</span></p>
             </a>
             <!-- </div> -->
             <!-- <div class="promo__card4"> -->
-            <a class="promo__photo4" href="single.html">
+            <a class="promo__photo4" href="product.html">
                 <img class="promo__photo_img4" src="./build/img/promo_4.png" alt="photo">
                 <p class="promo__hot promo__new">new arrivals <span class="promo__formen">FOR kids</span></p>
             </a>
@@ -363,39 +379,40 @@
         <div class="container">
             <h2 class="cards__heading">Fetured Items</h2>
             <p class="cards__paragraph">Shop for items based on what we featured in this week</p>
+
             <div class="cards__list">
-                <div class="cards__item">
-                    <a class="cards__link" href="product.html">
+                <div class="cards__item" data-id="1" data-name="Mango People T-shirt" data-price="63">
+                    <div class="cards__link">
                         <img class="cards__img" src="./build/img/card1.png" alt="card">
                         <div class="cards__price">
                             <p class="cards__text">Mango People T-shirt</p>
-                            <p class="cards__text__red">$50.00</p>
+                            <p class="cards__text__red">$63.00</p>
                         </div>
-                    </a>
+                    </div>
                     <div class="cards__add">
-                        <a class="cards__add__link" href="shoppingcart.html">
+                        <button class="cards__add__link">
                             <img class="cards__add__img" src="./build/img/basket_white.png" alt="basket">
                             <p class="cards__add__text">Add to Cart</p>
-                        </a>
+                        </button>
                     </div>
                 </div>
-                <div class="cards__item">
-                    <a class="cards__link" href="product.html">
+                <div class="cards__item" data-id="2" data-name="Mango People T-shirt" data-price="48">
+                    <a class="cards__link" href="single.html">
                         <img class="cards__img" src="./build/img/card2.png" alt="card">
                         <div class="cards__price">
                             <p class="cards__text">Mango People T-shirt</p>
-                            <p class="cards__text__red">$50.00</p>
+                            <p class="cards__text__red">$48.00</p>
                         </div>
                     </a>
                     <div class="cards__add">
-                        <a class="cards__add__link" href="shoppingcart.html">
+                        <button class="cards__add__link">
                             <img class="cards__add__img" src="./build/img/basket_white.png" alt="basket">
                             <p class="cards__add__text">Add to Cart</p>
-                        </a>
+                        </button>
                     </div>
                 </div>
-                <div class="cards__item">
-                    <a class="cards__link" href="product.html">
+                <div class="cards__item" data-id="3" data-name="Mango People T-shirt" data-price="50">
+                    <a class="cards__link" href="single.html">
                         <img class="cards__img" src="./build/img/card3.png" alt="card">
                         <div class="cards__price">
                             <p class="cards__text">Mango People T-shirt</p>
@@ -403,88 +420,89 @@
                         </div>
                     </a>
                     <div class="cards__add">
-                        <a class="cards__add__link" href="shoppingcart.html">
+                        <button class="cards__add__link">
                             <img class="cards__add__img" src="./build/img/basket_white.png" alt="basket">
                             <p class="cards__add__text">Add to Cart</p>
-                        </a>
+                        </button>
                     </div>
                 </div>
-                <div class="cards__item">
-                    <a class="cards__link" href="product.html">
+                <div class="cards__item" data-id="4" data-name="Mango People T-shirt" data-price="54">
+                    <a class="cards__link" href="single.html">
                         <img class="cards__img" src="./build/img/card4.png" alt="card">
                         <div class="cards__price">
                             <p class="cards__text">Mango People T-shirt</p>
-                            <p class="cards__text__red">$50.00</p>
+                            <p class="cards__text__red">$54.00</p>
                         </div>
                     </a>
                     <div class="cards__add">
-                        <a class="cards__add__link" href="shoppingcart.html">
+                        <button class="cards__add__link">
                             <img class="cards__add__img" src="./build/img/basket_white.png" alt="basket">
                             <p class="cards__add__text">Add to Cart</p>
-                        </a>
+                        </button>
                     </div>
                 </div>
-                <div class="cards__item">
-                    <a class="cards__link" href="product.html">
+                <div class="cards__item" data-id="5" data-name="Mango People T-shirt" data-price="70">
+                    <a class="cards__link" href="single.html">
                         <img class="cards__img" src="./build/img/card5.png" alt="card">
                         <div class="cards__price">
                             <p class="cards__text">Mango People T-shirt</p>
-                            <p class="cards__text__red">$50.00</p>
+                            <p class="cards__text__red">$70.00</p>
                         </div>
                     </a>
                     <div class="cards__add">
-                        <a class="cards__add__link" href="shoppingcart.html">
+                        <button class="cards__add__link">
                             <img class="cards__add__img" src="./build/img/basket_white.png" alt="basket">
                             <p class="cards__add__text">Add to Cart</p>
-                        </a>
+                        </button>
                     </div>
                 </div>
-                <div class="cards__item">
-                    <a class="cards__link" href="product.html">
+                <div class="cards__item" data-id="6" data-name="Mango People T-shirt" data-price="47">
+                    <a class="cards__link" href="single.html">
                         <img class="cards__img" src="./build/img/card6.png" alt="card">
                         <div class="cards__price">
                             <p class="cards__text">Mango People T-shirt</p>
-                            <p class="cards__text__red">$50.00</p>
+                            <p class="cards__text__red">$47.00</p>
                         </div>
                     </a>
                     <div class="cards__add">
-                        <a class="cards__add__link" href="shoppingcart.html">
+                        <button class="cards__add__link">
                             <img class="cards__add__img" src="./build/img/basket_white.png" alt="basket">
                             <p class="cards__add__text">Add to Cart</p>
-                        </a>
+                        </button>
                     </div>
                 </div>
-                <div class="cards__item">
-                    <a class="cards__link" href="product.html">
-                        <img class="cards__img" src="./build/img/card7.png" alt="card">
+                <div class="cards__item" data-id="7" data-name="Mango People T-shirt" data-price="78">
+                    <a class="cards__link" href="single.html">
+                        <img class="cards__img" src="./build/img/card1.png" alt="card">
+                        <div class="cards__price">
+                            <p class="cards__text">Mango People T-shirt</p>
+                            <p class="cards__text__red">$78.00</p>
+                        </div>
+                    </a>
+                    <div class="cards__add">
+                        <button class="cards__add__link">
+                            <img class="cards__add__img" src="./build/img/basket_white.png" alt="basket">
+                            <p class="cards__add__text">Add to Cart</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="cards__item" data-id="8" data-name="Mango People T-shirt" data-price="50">
+                    <a class="cards__link" href="single.html">
+                        <img class="cards__img" src="./build/img/card2.png" alt="card">
                         <div class="cards__price">
                             <p class="cards__text">Mango People T-shirt</p>
                             <p class="cards__text__red">$50.00</p>
                         </div>
                     </a>
                     <div class="cards__add">
-                        <a class="cards__add__link" href="shoppingcart.html">
+                        <button class="cards__add__link">
                             <img class="cards__add__img" src="./build/img/basket_white.png" alt="basket">
                             <p class="cards__add__text">Add to Cart</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="cards__item">
-                    <a class="cards__link" href="product.html">
-                        <img class="cards__img" src="./build/img/card8.png" alt="card">
-                        <div class="cards__price">
-                            <p class="cards__text">Mango People T-shirt</p>
-                            <p class="cards__text__red">$50.00</p>
-                        </div>
-                    </a>
-                    <div class="cards__add">
-                        <a class="cards__add__link" href="shoppingcart.html">
-                            <img class="cards__add__img" src="./build/img/basket_white.png" alt="basket">
-                            <p class="cards__add__text">Add to Cart</p>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
+
             <div class="cards__button-product">
                 <button class="cards__button-product_text">Browse All Product</button>
             </div>
@@ -495,7 +513,7 @@
     <section class="bigbanner">
         <div class="container bigbanner__item">
             <div class="bigbanner__left">
-                <img src="./build/img/bigbanner.png" alt="banner">
+                <img class="bigbanner__left_img" src="./build/img/bigbanner.png" alt="banner">
             </div>
             <div class="bigbanner__right">
                 <div class="bigbanner__right__content">
@@ -556,51 +574,44 @@
 
     <footer class="footer">
         <div class="container footer__list">
-            <div class="footer__list1">
-                <div class="footer__item">
-                    <div class="footer__item__logo">
-                        <a href="#"><img src="./build/img/logo.png" alt="logo"></a>
-                        <a class="header__logo" href="#">BRAN<span class="header__logo_other-color">D</span></a>
-                    </div>
-                    <p class="footer__item__text">Objectively transition extensive data rather than cross functional
-                        solutions. Monotonectally
-                        syndicate
-                        multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array
-                        of
-                        processes and cross-unit partnerships. </p>
-                    <p class="footer__item__text">Efficiently plagiarize 24/365 action items and focused infomediaries.
-                        Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+            <div class="footer__item">
+                <div class="footer__item__logo">
+                    <a href="#"><img src="./build/img/logo.png" alt="logo"></a>
+                    <a class="header__logo" href="#">BRAN<span class="header__logo_other-color">D</span></a>
                 </div>
+                <p class="footer__item__text">Objectively transition extensive data rather than cross functional
+                    solutions. Monotonectally
+                    syndicate
+                    multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array
+                    of
+                    processes and cross-unit partnerships. </p>
+                <p class="footer__item__text">Efficiently plagiarize 24/365 action items and focused infomediaries.
+                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
             </div>
-            <div class="footer__list2">
-                <div class="footer__item">
-                    <h3 class="footer__heading">company</h3>
-                    <a class="footer__link" href="#">home</a>
-                    <a class="footer__link" href="#">shop</a>
-                    <a class="footer__link" href="#">about</a>
-                    <a class="footer__link" href="#">how it works</a>
-                    <a class="footer__link" href="#">contact</a>
-                </div>
+
+            <div class="footer__item">
+                <h3 class="footer__heading">company</h3>
+                <a class="footer__link" href="#">home</a>
+                <a class="footer__link" href="#">shop</a>
+                <a class="footer__link" href="#">about</a>
+                <a class="footer__link" href="#">how it works</a>
+                <a class="footer__link" href="#">contact</a>
             </div>
-            <div class="footer__list3">
-                <div class="footer__item">
-                    <h3 class="footer__heading">information</h3>
-                    <a class="footer__link" href="#">tearms & condition</a>
-                    <a class="footer__link" href="#">privacy police</a>
-                    <a class="footer__link" href="#">how to buy</a>
-                    <a class="footer__link" href="#">how to sell</a>
-                    <a class="footer__link" href="#">promotion</a>
-                </div>
+            <div class="footer__item">
+                <h3 class="footer__heading">information</h3>
+                <a class="footer__link" href="#">tearms & condition</a>
+                <a class="footer__link" href="#">privacy police</a>
+                <a class="footer__link" href="#">how to buy</a>
+                <a class="footer__link" href="#">how to sell</a>
+                <a class="footer__link" href="#">promotion</a>
             </div>
-            <div class="footer__list4">
-                <div class="footer__item">
-                    <h3 class="footer__heading">shop category</h3>
-                    <a class="footer__link" href="#">men</a>
-                    <a class="footer__link" href="#">women</a>
-                    <a class="footer__link" href="#">child</a>
-                    <a class="footer__link" href="#">apparel</a>
-                    <a class="footer__link" href="#">brows all</a>
-                </div>
+            <div class="footer__item">
+                <h3 class="footer__heading">shop category</h3>
+                <a class="footer__link" href="#">men</a>
+                <a class="footer__link" href="#">women</a>
+                <a class="footer__link" href="#">child</a>
+                <a class="footer__link" href="#">apparel</a>
+                <a class="footer__link" href="#">brows all</a>
             </div>
         </div>
         <div class="footer__finish">
@@ -620,7 +631,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="build/js/script.js"></script>
 </body>
 
 </html>
