@@ -11,15 +11,16 @@ document.querySelector('.basket').addEventListener('click', () => {
 
 const basket = {};
 
-document.querySelector('cards__list').addEventListener('click', event => {
+document.querySelector('.cards__item').addEventListener('click', event => {
   if (!event.target.classList.contains('cards__add__link')) {
     return;
   }
 
-  const cartItemEl = event.target.closest('.cards__item');
+  const cartItemEl = event.target.closest('cards__add');
   const id = +cartItemEl.dataset.id;
   const name = cartItemEl.dataset.name;
   const price = +cartItemEl.dataset.price;
+
   addToBasket(id, name, price);
 });
 

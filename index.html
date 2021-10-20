@@ -51,7 +51,22 @@
                 </form>
             </div>
             <div class="header__right">
-                <a class="basket" href="shoppingcart.html"><img src="./build/img/basket.png" alt="basket"></a>
+                <span class="basket">
+                    <img class="bask__img" src="./build/img/basket.png" alt="basket">
+                    <span>0</span>
+                </span>
+                <div class="basket__product basket__product_hidden">
+                    <div class="basket__name basket__header">
+                        <div>Название товара</div>
+                        <div>Количество</div>
+                        <div>Цена за шт.</div>
+                        <div>Итого</div>
+                    </div>
+                    <div class="basket__total">
+                        Товаров в корзине на сумму:
+                        $<span class="basket__total_value">0</span>
+                    </div>
+                </div>
                 <details class="button__logo">
                     <summary class="summary__basket">My Account</summary>
                     <div class="dropdown__menu dropdown__menu_account">
@@ -364,38 +379,39 @@
         <div class="container">
             <h2 class="cards__heading">Fetured Items</h2>
             <p class="cards__paragraph">Shop for items based on what we featured in this week</p>
+
             <div class="cards__list">
-                <div class="cards__item">
-                    <a class="cards__link" href="single.html">
+                <div class="cards__item" data-id="1" data-name="Mango People T-shirt" data-price="63">
+                    <div class="cards__link">
                         <img class="cards__img" src="./build/img/card1.png" alt="card">
                         <div class="cards__price">
                             <p class="cards__text">Mango People T-shirt</p>
-                            <p class="cards__text__red">$50.00</p>
+                            <p class="cards__text__red">$63.00</p>
                         </div>
-                    </a>
+                    </div>
                     <div class="cards__add">
-                        <a class="cards__add__link" href="shoppingcart.html">
+                        <button class="cards__add__link">
                             <img class="cards__add__img" src="./build/img/basket_white.png" alt="basket">
                             <p class="cards__add__text">Add to Cart</p>
-                        </a>
+                        </button>
                     </div>
                 </div>
-                <div class="cards__item">
+                <div class="cards__item" data-id="2" data-name="Mango People T-shirt" data-price="48">
                     <a class="cards__link" href="single.html">
                         <img class="cards__img" src="./build/img/card2.png" alt="card">
                         <div class="cards__price">
                             <p class="cards__text">Mango People T-shirt</p>
-                            <p class="cards__text__red">$50.00</p>
+                            <p class="cards__text__red">$48.00</p>
                         </div>
                     </a>
                     <div class="cards__add">
-                        <a class="cards__add__link" href="shoppingcart.html">
+                        <button class="cards__add__link">
                             <img class="cards__add__img" src="./build/img/basket_white.png" alt="basket">
                             <p class="cards__add__text">Add to Cart</p>
-                        </a>
+                        </button>
                     </div>
                 </div>
-                <div class="cards__item">
+                <div class="cards__item" data-id="3" data-name="Mango People T-shirt" data-price="50">
                     <a class="cards__link" href="single.html">
                         <img class="cards__img" src="./build/img/card3.png" alt="card">
                         <div class="cards__price">
@@ -404,88 +420,89 @@
                         </div>
                     </a>
                     <div class="cards__add">
-                        <a class="cards__add__link" href="shoppingcart.html">
+                        <button class="cards__add__link">
                             <img class="cards__add__img" src="./build/img/basket_white.png" alt="basket">
                             <p class="cards__add__text">Add to Cart</p>
-                        </a>
+                        </button>
                     </div>
                 </div>
-                <div class="cards__item">
+                <div class="cards__item" data-id="4" data-name="Mango People T-shirt" data-price="54">
                     <a class="cards__link" href="single.html">
                         <img class="cards__img" src="./build/img/card4.png" alt="card">
                         <div class="cards__price">
                             <p class="cards__text">Mango People T-shirt</p>
-                            <p class="cards__text__red">$50.00</p>
+                            <p class="cards__text__red">$54.00</p>
                         </div>
                     </a>
                     <div class="cards__add">
-                        <a class="cards__add__link" href="shoppingcart.html">
+                        <button class="cards__add__link">
                             <img class="cards__add__img" src="./build/img/basket_white.png" alt="basket">
                             <p class="cards__add__text">Add to Cart</p>
-                        </a>
+                        </button>
                     </div>
                 </div>
-                <div class="cards__item">
+                <div class="cards__item" data-id="5" data-name="Mango People T-shirt" data-price="70">
                     <a class="cards__link" href="single.html">
                         <img class="cards__img" src="./build/img/card5.png" alt="card">
                         <div class="cards__price">
                             <p class="cards__text">Mango People T-shirt</p>
-                            <p class="cards__text__red">$50.00</p>
+                            <p class="cards__text__red">$70.00</p>
                         </div>
                     </a>
                     <div class="cards__add">
-                        <a class="cards__add__link" href="shoppingcart.html">
+                        <button class="cards__add__link">
                             <img class="cards__add__img" src="./build/img/basket_white.png" alt="basket">
                             <p class="cards__add__text">Add to Cart</p>
-                        </a>
+                        </button>
                     </div>
                 </div>
-                <div class="cards__item">
+                <div class="cards__item" data-id="6" data-name="Mango People T-shirt" data-price="47">
                     <a class="cards__link" href="single.html">
                         <img class="cards__img" src="./build/img/card6.png" alt="card">
                         <div class="cards__price">
                             <p class="cards__text">Mango People T-shirt</p>
-                            <p class="cards__text__red">$50.00</p>
+                            <p class="cards__text__red">$47.00</p>
                         </div>
                     </a>
                     <div class="cards__add">
-                        <a class="cards__add__link" href="shoppingcart.html">
+                        <button class="cards__add__link">
                             <img class="cards__add__img" src="./build/img/basket_white.png" alt="basket">
                             <p class="cards__add__text">Add to Cart</p>
-                        </a>
+                        </button>
                     </div>
                 </div>
-                <div class="cards__item">
+                <div class="cards__item" data-id="7" data-name="Mango People T-shirt" data-price="78">
                     <a class="cards__link" href="single.html">
-                        <img class="cards__img" src="./build/img/card7.png" alt="card">
+                        <img class="cards__img" src="./build/img/card1.png" alt="card">
+                        <div class="cards__price">
+                            <p class="cards__text">Mango People T-shirt</p>
+                            <p class="cards__text__red">$78.00</p>
+                        </div>
+                    </a>
+                    <div class="cards__add">
+                        <button class="cards__add__link">
+                            <img class="cards__add__img" src="./build/img/basket_white.png" alt="basket">
+                            <p class="cards__add__text">Add to Cart</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="cards__item" data-id="8" data-name="Mango People T-shirt" data-price="50">
+                    <a class="cards__link" href="single.html">
+                        <img class="cards__img" src="./build/img/card2.png" alt="card">
                         <div class="cards__price">
                             <p class="cards__text">Mango People T-shirt</p>
                             <p class="cards__text__red">$50.00</p>
                         </div>
                     </a>
                     <div class="cards__add">
-                        <a class="cards__add__link" href="shoppingcart.html">
+                        <button class="cards__add__link">
                             <img class="cards__add__img" src="./build/img/basket_white.png" alt="basket">
                             <p class="cards__add__text">Add to Cart</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="cards__item">
-                    <a class="cards__link" href="single.html">
-                        <img class="cards__img" src="./build/img/card8.png" alt="card">
-                        <div class="cards__price">
-                            <p class="cards__text">Mango People T-shirt</p>
-                            <p class="cards__text__red">$50.00</p>
-                        </div>
-                    </a>
-                    <div class="cards__add">
-                        <a class="cards__add__link" href="shoppingcart.html">
-                            <img class="cards__add__img" src="./build/img/basket_white.png" alt="basket">
-                            <p class="cards__add__text">Add to Cart</p>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
+
             <div class="cards__button-product">
                 <button class="cards__button-product_text">Browse All Product</button>
             </div>
@@ -614,7 +631,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="build/js/script.js"></script>
 </body>
 
 </html>
