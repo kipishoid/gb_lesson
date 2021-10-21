@@ -11,7 +11,7 @@ document.querySelector('.basket').addEventListener('click', () => {
 
 const basket = {};
 
-document.querySelector('cards__list').addEventListener('click', event => {
+document.querySelector('.cards__list').addEventListener('click', event => {
   if (!event.target.classList.contains('cards__add__link')) {
     return;
   }
@@ -69,7 +69,7 @@ function renderNewProductBasket(productId) {
     <div class="basket__name" data-productId="${productId}">
       <div>${basket[productId].name}</div>
       <div>
-        <span class = "product__basket_count"> $ {basket[productId].count} </span> шт.
+        <span class = "product__basket_count"> ${basket[productId].count}</span> шт.
       </div>
       <div>$${basket[productId].price}</div>
       <div>
