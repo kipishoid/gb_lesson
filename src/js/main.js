@@ -1,8 +1,8 @@
 'use strict';
 
-const basketEl = document.querySelector('.basket span');
+const getBasketTotalEl = document.querySelector('.basket span');
 const basketTotalEl = document.querySelector('.basket__total');
-const basketTotalValueEl = document.querySelector('.basket__total_value');
+const basketTotalPriceEl = document.querySelector('.basket__total_value');
 
 
 document.querySelector('.basket').addEventListener('click', () => {
@@ -33,8 +33,9 @@ function addToBasket(id, name, price) {
       count: 0
     };
   }
+
   basket[id].count++;
-  basketTotalEl.textContent = getBasketTotal().toString();
+  getBasketTotalEl.textContent = getBasketTotal().toString();
   basketTotalPriceEl.textContent = getBasketTotalPrice().toFixed(2);
   renderProductBasket(id);
 }
