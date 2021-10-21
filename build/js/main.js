@@ -1,8 +1,8 @@
 'use strict';
 
-const basketEl = document.querySelector('.basket span');
+const getBasketTotalEl = document.querySelector('.basket span');
 const basketTotalEl = document.querySelector('.basket__total');
-const basketTotalValueEl = document.querySelector('.basket__total_value');
+const basketTotalPriceEl = document.querySelector('.basket__total_value');
 
 
 document.querySelector('.basket').addEventListener('click', () => {
@@ -11,7 +11,7 @@ document.querySelector('.basket').addEventListener('click', () => {
 
 const basket = {};
 
-document.querySelector('cards__list').addEventListener('click', event => {
+document.querySelector('.cards__list').addEventListener('click', event => {
   if (!event.target.classList.contains('cards__add__link')) {
     return;
   }
@@ -33,8 +33,9 @@ function addToBasket(id, name, price) {
       count: 0
     };
   }
+
   basket[id].count++;
-  basketTotalEl.textContent = getBasketTotal().toString();
+  getBasketTotalEl.textContent = getBasketTotal().toString();
   basketTotalPriceEl.textContent = getBasketTotalPrice().toFixed(2);
   renderProductBasket(id);
 }
@@ -68,7 +69,7 @@ function renderNewProductBasket(productId) {
     <div class="basket__name" data-productId="${productId}">
       <div>${basket[productId].name}</div>
       <div>
-        <span class = "product__basket_count"> $ {basket[productId].count} </span> шт.
+        <span class = "product__basket_count"> ${basket[productId].count}</span> шт.
       </div>
       <div>$${basket[productId].price}</div>
       <div>
