@@ -456,7 +456,7 @@
       background-color: $light
     &:hover .cards__img
       filter: brightness(30%)
-    &:hover .cards__add
+    &:hover .cards__add_button
       display: flex
   &__link
     text-decoration: none
@@ -476,11 +476,12 @@
       font-weight: 700
       text-transform: uppercase
   &__add
-    position: absolute
-    top: 98px
-    display: none
-    justify-content: center
-    width: 100%
+    &_button
+      position: absolute
+      top: 98px
+      display: none
+      justify-content: center
+      width: 100%
     &__link
       border: 1px solid $light
       padding: 10px
